@@ -1,0 +1,61 @@
+{
+  "id": 1,
+  "nome": "Ana Clara Figueiredo",
+  "titulacao": "Doutora",
+  "cargo": "Professora Adjunta",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Segurança de Aplicações",
+    "DevSecOps"
+  ],
+  "linhaPesquisa": "Automação de controles de segurança em esteiras de entrega contínua",
+  "bio": "Pesquisa como mover verificação de segurança para dentro do fluxo de desenvolvimento sem transformar o pipeline em gargalo. Coordena o eixo de segurança de aplicações do GEPISEG desde 2021.",
+  "email": "ana.clara@unialfa.edu.br",
+  "fotoSeed": "ana-clara-figueiredo",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=ana-clara-figueiredo&backgroundColor=2F6F4E&radius=50",
+  "iniciais": "AF",
+  "cor": "#2F6F4E",
+  "ingresso": "2018-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 7,
+    "totalCitacoes": 189,
+    "indiceH": 5,
+    "comoAutorPrincipal": 5,
+    "primeiroAno": 2023,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Verificação de dependências em esteiras de entrega contínua: custo e cobertura",
+      "url": "json/artigo/1.json"
+    },
+    {
+      "titulo": "SSRF em arquiteturas de microsserviços: do acesso interno ao roubo de credencial",
+      "url": "json/artigo/2.json"
+    },
+    {
+      "titulo": "Escalonamento de privilégio por confusão de identidade em APIs REST",
+      "url": "json/artigo/8.json"
+    },
+    {
+      "titulo": "Falsos positivos em análise estática: medindo o custo de atenção da equipe",
+      "url": "json/artigo/19.json"
+    },
+    {
+      "titulo": "Segredos em repositório: detecção, rotação e o que fazer com o histórico",
+      "url": "json/artigo/25.json"
+    },
+    {
+      "titulo": "Modelagem de ameaça leve para equipes pequenas",
+      "url": "json/artigo/26.json"
+    },
+    {
+      "titulo": "Limitação de requisições em ambientes serverless: o contador que não é compartilhado",
+      "url": "json/artigo/27.json"
+    }
+  ],
+  "url": "json/pesquisador/1.json",
+  "created": "2018-06-12T12:30:00.000Z"
+}

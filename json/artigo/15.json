@@ -1,0 +1,43 @@
+{
+  "id": 15,
+  "titulo": "Configuração indevida em provedores públicos: anatomia de 40 incidentes",
+  "resumo": "Classificamos 40 incidentes públicos cuja causa raiz foi configuração e não vulnerabilidade de software. Armazenamento exposto e credencial de longa duração em repositório respondem por mais da metade dos casos.",
+  "conteudo": "## Resumo\nClassificamos 40 incidentes públicos cuja causa raiz foi configuração e não vulnerabilidade de software. Armazenamento exposto e credencial de longa duração em repositório respondem por mais da metade dos casos.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Segurança em Nuvem do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Henrique Barros Pacheco entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Segurança em Nuvem",
+  "palavrasChave": [
+    "nuvem",
+    "configuração",
+    "exposição",
+    "incidente"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-10-07",
+  "ano": 2024,
+  "veiculo": "Revista Brasileira de Segurança Computacional",
+  "paginas": "109-120",
+  "citacoes": 52,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-seguranca-em-nuvem-15",
+  "imagem": "https://picsum.photos/seed/gepiseg-seguranca-em-nuvem-15/640/360",
+  "capa": {
+    "cor": "#8C4A2F",
+    "iniciais": "SE"
+  },
+  "autorPrincipal": {
+    "nome": "Henrique Barros Pacheco",
+    "url": "json/pesquisador/8.json"
+  },
+  "autores": [
+    {
+      "nome": "Henrique Barros Pacheco",
+      "url": "json/pesquisador/8.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/8.json"
+  ],
+  "url": "json/artigo/15.json",
+  "created": "2024-04-04T12:30:00.000Z"
+}

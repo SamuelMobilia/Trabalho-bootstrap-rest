@@ -1,0 +1,49 @@
+{
+  "id": 6,
+  "nome": "Felipe Nogueira Castro",
+  "titulacao": "Especialista",
+  "cargo": "Pesquisador Associado",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Resposta a Incidentes",
+    "SOC"
+  ],
+  "linhaPesquisa": "Detecção e resposta assistida por automação em centros de operação",
+  "bio": "Veio de sete anos de plantão em SOC. Estuda por que alertas corretos continuam sendo ignorados e o que a automação resolve de fato.",
+  "email": "felipe.nogueira@unialfa.edu.br",
+  "fotoSeed": "felipe-nogueira-castro",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=felipe-nogueira-castro&backgroundColor=1F6F72&radius=50",
+  "iniciais": "FC",
+  "cor": "#1F6F72",
+  "ingresso": "2023-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 4,
+    "totalCitacoes": 137,
+    "indiceH": 4,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2023,
+    "ultimoAno": 2025
+  },
+  "artigos": [
+    {
+      "titulo": "Tempo de permanência do atacante: medição em ambientes monitorados",
+      "url": "json/artigo/11.json"
+    },
+    {
+      "titulo": "Fadiga de alerta em centros de operação: causas e intervenções",
+      "url": "json/artigo/12.json"
+    },
+    {
+      "titulo": "Pretexto e autoridade: por que o pedido urgente funciona",
+      "url": "json/artigo/18.json"
+    },
+    {
+      "titulo": "Rotulagem de incidentes para treinamento supervisionado: o gargalo que ninguém publica",
+      "url": "json/artigo/22.json"
+    }
+  ],
+  "url": "json/pesquisador/6.json",
+  "created": "2023-07-13T12:30:00.000Z"
+}

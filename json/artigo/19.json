@@ -1,0 +1,48 @@
+{
+  "id": 19,
+  "titulo": "Falsos positivos em análise estática: medindo o custo de atenção da equipe",
+  "resumo": "Quantificamos o tempo gasto por desenvolvedores na triagem de achados de ferramentas de análise estática em três projetos. Acima de certa taxa de falso positivo, a equipe passa a ignorar a ferramenta inteira, inclusive os achados corretos.",
+  "conteudo": "## Resumo\nQuantificamos o tempo gasto por desenvolvedores na triagem de achados de ferramentas de análise estática em três projetos. Acima de certa taxa de falso positivo, a equipe passa a ignorar a ferramenta inteira, inclusive os achados corretos.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Análise Estática do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por João Pedro Rezende, Ana Clara Figueiredo entre 2025 e 2026. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "Análise Estática",
+  "palavrasChave": [
+    "análise estática",
+    "falso positivo",
+    "SAST",
+    "produtividade"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2026-02-05",
+  "ano": 2026,
+  "veiculo": "Workshop de Qualidade e Segurança de Software",
+  "paginas": "137-148",
+  "citacoes": 4,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-analise-estatica-19",
+  "imagem": "https://picsum.photos/seed/gepiseg-analise-estatica-19/640/360",
+  "capa": {
+    "cor": "#1F6F72",
+    "iniciais": "AN"
+  },
+  "autorPrincipal": {
+    "nome": "João Pedro Rezende",
+    "url": "json/pesquisador/10.json"
+  },
+  "autores": [
+    {
+      "nome": "João Pedro Rezende",
+      "url": "json/pesquisador/10.json"
+    },
+    {
+      "nome": "Ana Clara Figueiredo",
+      "url": "json/pesquisador/1.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/10.json",
+    "json/pesquisador/1.json"
+  ],
+  "url": "json/artigo/19.json",
+  "created": "2026-12-21T12:30:00.000Z"
+}

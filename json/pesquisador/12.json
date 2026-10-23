@@ -1,0 +1,49 @@
+{
+  "id": 12,
+  "nome": "Marcos Vinícius Ferraz",
+  "titulacao": "Doutor",
+  "cargo": "Professor Associado",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Segurança Ofensiva",
+    "Engenharia Reversa"
+  ],
+  "linhaPesquisa": "Análise de binários e identificação de vulnerabilidades em software proprietário",
+  "bio": "Pesquisa o que dá para descobrir sobre um programa sem ter o código dele. Coordena o laboratório de engenharia reversa.",
+  "email": "marcos.vinicius@unialfa.edu.br",
+  "fotoSeed": "marcos-vinicius-ferraz",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=marcos-vinicius-ferraz&backgroundColor=6B4E9B&radius=50",
+  "iniciais": "MF",
+  "cor": "#6B4E9B",
+  "ingresso": "2022-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 4,
+    "totalCitacoes": 137,
+    "indiceH": 4,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2023,
+    "ultimoAno": 2025
+  },
+  "artigos": [
+    {
+      "titulo": "Permissões de longa duração e o custo invisível da conveniência",
+      "url": "json/artigo/16.json"
+    },
+    {
+      "titulo": "Identificação de funções criptográficas em binários sem símbolos",
+      "url": "json/artigo/23.json"
+    },
+    {
+      "titulo": "Ofuscação e seu efeito prático sobre o tempo de análise",
+      "url": "json/artigo/24.json"
+    },
+    {
+      "titulo": "Segmentação de rede doméstica como mitigação para dispositivos não confiáveis",
+      "url": "json/artigo/28.json"
+    }
+  ],
+  "url": "json/pesquisador/12.json",
+  "created": "2022-01-25T12:30:00.000Z"
+}

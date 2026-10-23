@@ -1,0 +1,43 @@
+{
+  "id": 13,
+  "titulo": "Cadeia de custódia em nuvem: preservação de evidência sem controle da infraestrutura",
+  "resumo": "Discutimos os limites da perícia quando o investigador não controla o meio onde a evidência reside. Propomos um protocolo de coleta que registra as limitações do ambiente como parte do laudo, em vez de omiti-las.",
+  "conteudo": "## Resumo\nDiscutimos os limites da perícia quando o investigador não controla o meio onde a evidência reside. Propomos um protocolo de coleta que registra as limitações do ambiente como parte do laudo, em vez de omiti-las.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Forense Digital do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Gabriela Souza Andrade entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Forense Digital",
+  "palavrasChave": [
+    "forense",
+    "nuvem",
+    "cadeia de custódia",
+    "evidência"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-08-08",
+  "ano": 2025,
+  "veiculo": "Revista Brasileira de Ciências Forenses",
+  "paginas": "95-106",
+  "citacoes": 38,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-forense-digital-13",
+  "imagem": "https://picsum.photos/seed/gepiseg-forense-digital-13/640/360",
+  "capa": {
+    "cor": "#4A5568",
+    "iniciais": "FO"
+  },
+  "autorPrincipal": {
+    "nome": "Gabriela Souza Andrade",
+    "url": "json/pesquisador/7.json"
+  },
+  "autores": [
+    {
+      "nome": "Gabriela Souza Andrade",
+      "url": "json/pesquisador/7.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/7.json"
+  ],
+  "url": "json/artigo/13.json",
+  "created": "2025-06-09T12:30:00.000Z"
+}

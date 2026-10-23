@@ -1,0 +1,43 @@
+{
+  "id": 21,
+  "titulo": "Detecção de anomalia em tráfego corporativo: por que o modelo desaba em produção",
+  "resumo": "Avaliamos a degradação de detectores de anomalia treinados em tráfego histórico quando aplicados meses depois. A queda de desempenho acompanha mudanças de infraestrutura, não mudanças de comportamento de ataque.",
+  "conteudo": "## Resumo\nAvaliamos a degradação de detectores de anomalia treinados em tráfego histórico quando aplicados meses depois. A queda de desempenho acompanha mudanças de infraestrutura, não mudanças de comportamento de ataque.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Detecção de Anomalias do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Larissa Monteiro Dias entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Detecção de Anomalias",
+  "palavrasChave": [
+    "aprendizado de máquina",
+    "detecção de anomalia",
+    "desvio de distribuição",
+    "rede"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-04-04",
+  "ano": 2025,
+  "veiculo": "Journal of Network and Systems Management",
+  "paginas": "151-162",
+  "citacoes": 33,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-deteccao-de-anomalias-21",
+  "imagem": "https://picsum.photos/seed/gepiseg-deteccao-de-anomalias-21/640/360",
+  "capa": {
+    "cor": "#4A5568",
+    "iniciais": "DE"
+  },
+  "autorPrincipal": {
+    "nome": "Larissa Monteiro Dias",
+    "url": "json/pesquisador/11.json"
+  },
+  "autores": [
+    {
+      "nome": "Larissa Monteiro Dias",
+      "url": "json/pesquisador/11.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/11.json"
+  ],
+  "url": "json/artigo/21.json",
+  "created": "2025-10-16T12:30:00.000Z"
+}

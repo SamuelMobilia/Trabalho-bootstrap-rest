@@ -1,0 +1,48 @@
+{
+  "id": 23,
+  "titulo": "Identificação de funções criptográficas em binários sem símbolos",
+  "resumo": "Apresentamos uma técnica para localizar primitivas criptográficas em binários despojados de símbolos, baseada em assinatura de constantes e padrão de fluxo. A técnica identificou corretamente onze das treze primitivas no conjunto de avaliação.",
+  "conteudo": "## Resumo\nApresentamos uma técnica para localizar primitivas criptográficas em binários despojados de símbolos, baseada em assinatura de constantes e padrão de fluxo. A técnica identificou corretamente onze das treze primitivas no conjunto de avaliação.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Engenharia Reversa do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Marcos Vinícius Ferraz, Bruno Tavares Lemos entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Engenharia Reversa",
+  "palavrasChave": [
+    "engenharia reversa",
+    "binário",
+    "criptografia",
+    "identificação"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-06-03",
+  "ano": 2025,
+  "veiculo": "Journal of Cryptographic Engineering",
+  "paginas": "165-176",
+  "citacoes": 27,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-engenharia-reversa-23",
+  "imagem": "https://picsum.photos/seed/gepiseg-engenharia-reversa-23/640/360",
+  "capa": {
+    "cor": "#8C4A2F",
+    "iniciais": "EN"
+  },
+  "autorPrincipal": {
+    "nome": "Marcos Vinícius Ferraz",
+    "url": "json/pesquisador/12.json"
+  },
+  "autores": [
+    {
+      "nome": "Marcos Vinícius Ferraz",
+      "url": "json/pesquisador/12.json"
+    },
+    {
+      "nome": "Bruno Tavares Lemos",
+      "url": "json/pesquisador/2.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/12.json",
+    "json/pesquisador/2.json"
+  ],
+  "url": "json/artigo/23.json",
+  "created": "2025-08-11T12:30:00.000Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": 9,
+  "nome": "Isabela Correia Lima",
+  "titulacao": "Mestra",
+  "cargo": "Pesquisadora",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Engenharia Social",
+    "Fator Humano"
+  ],
+  "linhaPesquisa": "Eficácia de programas de conscientização em segurança da informação",
+  "bio": "Pesquisa por que treinamento de phishing melhora o número do relatório e não melhora o comportamento. Formação em Psicologia e em Segurança.",
+  "email": "isabela.correia@unialfa.edu.br",
+  "fotoSeed": "isabela-correia-lima",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=isabela-correia-lima&backgroundColor=2F6F4E&radius=50",
+  "iniciais": "IL",
+  "cor": "#2F6F4E",
+  "ingresso": "2019-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 4,
+    "totalCitacoes": 140,
+    "indiceH": 4,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2023,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Fadiga de alerta em centros de operação: causas e intervenções",
+      "url": "json/artigo/12.json"
+    },
+    {
+      "titulo": "Simulações de phishing medem o quê? Uma crítica metodológica",
+      "url": "json/artigo/17.json"
+    },
+    {
+      "titulo": "Pretexto e autoridade: por que o pedido urgente funciona",
+      "url": "json/artigo/18.json"
+    },
+    {
+      "titulo": "Avaliação de maturidade em segurança: o que o número esconde",
+      "url": "json/artigo/29.json"
+    }
+  ],
+  "url": "json/pesquisador/9.json",
+  "created": "2019-10-19T12:30:00.000Z"
+}

@@ -1,0 +1,54 @@
+{
+  "id": 5,
+  "nome": "Eduarda Mattos Vieira",
+  "titulacao": "Doutora",
+  "cargo": "Professora Adjunta",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Privacidade",
+    "LGPD",
+    "Governança"
+  ],
+  "linhaPesquisa": "Operacionalização de requisitos legais de privacidade em sistemas de informação",
+  "bio": "Pesquisa o que acontece quando uma exigência jurídica precisa virar coluna de banco e rotina de expurgo. Formação em Direito e em Computação.",
+  "email": "eduarda.mattos@unialfa.edu.br",
+  "fotoSeed": "eduarda-mattos-vieira",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=eduarda-mattos-vieira&backgroundColor=A6761D&radius=50",
+  "iniciais": "EV",
+  "cor": "#A6761D",
+  "ingresso": "2022-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 5,
+    "totalCitacoes": 156,
+    "indiceH": 5,
+    "comoAutorPrincipal": 3,
+    "primeiroAno": 2023,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "O que sua lâmpada conta sobre você: inferência de rotina a partir de tráfego doméstico",
+      "url": "json/artigo/5.json"
+    },
+    {
+      "titulo": "Direito ao esquecimento em sistemas com replicação: o apagamento que não apaga",
+      "url": "json/artigo/9.json"
+    },
+    {
+      "titulo": "Relatório de impacto à proteção de dados como artefato de engenharia",
+      "url": "json/artigo/10.json"
+    },
+    {
+      "titulo": "Modelagem de ameaça leve para equipes pequenas",
+      "url": "json/artigo/26.json"
+    },
+    {
+      "titulo": "Avaliação de maturidade em segurança: o que o número esconde",
+      "url": "json/artigo/29.json"
+    }
+  ],
+  "url": "json/pesquisador/5.json",
+  "created": "2022-02-02T12:30:00.000Z"
+}

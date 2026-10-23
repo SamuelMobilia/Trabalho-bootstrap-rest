@@ -1,0 +1,48 @@
+{
+  "id": 5,
+  "titulo": "O que sua lâmpada conta sobre você: inferência de rotina a partir de tráfego doméstico",
+  "resumo": "Mostramos que o padrão temporal do tráfego de dispositivos domésticos conectados permite inferir horários de sono, ausência e número de ocupantes, mesmo com todo o conteúdo cifrado. A proteção do conteúdo não protege o metadado.",
+  "conteudo": "## Resumo\nMostramos que o padrão temporal do tráfego de dispositivos domésticos conectados permite inferir horários de sono, ausência e número de ocupantes, mesmo com todo o conteúdo cifrado. A proteção do conteúdo não protege o metadado.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Segurança em IoT do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Carolina Prado Nunes, Eduarda Mattos Vieira entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Segurança em IoT",
+  "palavrasChave": [
+    "IoT",
+    "privacidade",
+    "análise de tráfego",
+    "metadados"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-12-12",
+  "ano": 2025,
+  "veiculo": "Revista Brasileira de Segurança Computacional",
+  "paginas": "39-50",
+  "citacoes": 34,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-seguranca-em-iot-5",
+  "imagem": "https://picsum.photos/seed/gepiseg-seguranca-em-iot-5/640/360",
+  "capa": {
+    "cor": "#4A5568",
+    "iniciais": "SE"
+  },
+  "autorPrincipal": {
+    "nome": "Carolina Prado Nunes",
+    "url": "json/pesquisador/3.json"
+  },
+  "autores": [
+    {
+      "nome": "Carolina Prado Nunes",
+      "url": "json/pesquisador/3.json"
+    },
+    {
+      "nome": "Eduarda Mattos Vieira",
+      "url": "json/pesquisador/5.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/3.json",
+    "json/pesquisador/5.json"
+  ],
+  "url": "json/artigo/5.json",
+  "created": "2025-02-02T12:30:00.000Z"
+}

@@ -1,0 +1,49 @@
+{
+  "id": 2,
+  "nome": "Bruno Tavares Lemos",
+  "titulacao": "Doutor",
+  "cargo": "Professor Associado",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Criptografia Aplicada",
+    "Protocolos Seguros"
+  ],
+  "linhaPesquisa": "Implementações de criptografia resistentes a canal lateral em dispositivos restritos",
+  "bio": "Trabalha com a distância entre a criptografia que se prova no papel e a que roda em hardware barato. Orienta o subgrupo de criptografia aplicada.",
+  "email": "bruno.tavares@unialfa.edu.br",
+  "fotoSeed": "bruno-tavares-lemos",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=bruno-tavares-lemos&backgroundColor=8C4A2F&radius=50",
+  "iniciais": "BL",
+  "cor": "#8C4A2F",
+  "ingresso": "2019-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 4,
+    "totalCitacoes": 121,
+    "indiceH": 4,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2024,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Implementações de AES em microcontroladores: análise de consumo e canal lateral",
+      "url": "json/artigo/3.json"
+    },
+    {
+      "titulo": "Troca de chaves pós-quântica em dispositivos restritos: viabilidade prática",
+      "url": "json/artigo/4.json"
+    },
+    {
+      "titulo": "Identificação de funções criptográficas em binários sem símbolos",
+      "url": "json/artigo/23.json"
+    },
+    {
+      "titulo": "Recuperação de chave a partir de despejo de memória em aplicações móveis",
+      "url": "json/artigo/30.json"
+    }
+  ],
+  "url": "json/pesquisador/2.json",
+  "created": "2019-11-23T12:30:00.000Z"
+}

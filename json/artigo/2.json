@@ -1,0 +1,48 @@
+{
+  "id": 2,
+  "titulo": "SSRF em arquiteturas de microsserviços: do acesso interno ao roubo de credencial",
+  "resumo": "Descrevemos como falhas de Server-Side Request Forgery deixam de ser um problema de acesso interno e passam a ser comprometimento de infraestrutura quando o serviço roda em nuvem com serviço de metadados acessível. Propomos um conjunto de controles de saída aplicável sem alteração de código de aplicação.",
+  "conteudo": "## Resumo\nDescrevemos como falhas de Server-Side Request Forgery deixam de ser um problema de acesso interno e passam a ser comprometimento de infraestrutura quando o serviço roda em nuvem com serviço de metadados acessível. Propomos um conjunto de controles de saída aplicável sem alteração de código de aplicação.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Segurança de Aplicações do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Ana Clara Figueiredo, Diego Albuquerque Rosa entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Segurança de Aplicações",
+  "palavrasChave": [
+    "SSRF",
+    "OWASP",
+    "microsserviços",
+    "metadados de instância"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-03-27",
+  "ano": 2025,
+  "veiculo": "Revista Brasileira de Segurança Computacional",
+  "paginas": "18-29",
+  "citacoes": 41,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-seguranca-de-aplicacoes-2",
+  "imagem": "https://picsum.photos/seed/gepiseg-seguranca-de-aplicacoes-2/640/360",
+  "capa": {
+    "cor": "#A6761D",
+    "iniciais": "SE"
+  },
+  "autorPrincipal": {
+    "nome": "Ana Clara Figueiredo",
+    "url": "json/pesquisador/1.json"
+  },
+  "autores": [
+    {
+      "nome": "Ana Clara Figueiredo",
+      "url": "json/pesquisador/1.json"
+    },
+    {
+      "nome": "Diego Albuquerque Rosa",
+      "url": "json/pesquisador/4.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/1.json",
+    "json/pesquisador/4.json"
+  ],
+  "url": "json/artigo/2.json",
+  "created": "2025-11-23T12:30:00.000Z"
+}

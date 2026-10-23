@@ -1,0 +1,48 @@
+{
+  "id": 22,
+  "titulo": "Rotulagem de incidentes para treinamento supervisionado: o gargalo que ninguém publica",
+  "resumo": "Relatamos a construção de um conjunto de dados rotulado a partir de alertas reais de um centro de operações. O custo de rotulagem, raramente reportado, superou em dez vezes o custo de treinamento dos modelos avaliados.",
+  "conteudo": "## Resumo\nRelatamos a construção de um conjunto de dados rotulado a partir de alertas reais de um centro de operações. O custo de rotulagem, raramente reportado, superou em dez vezes o custo de treinamento dos modelos avaliados.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Detecção de Anomalias do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Larissa Monteiro Dias, Felipe Nogueira Castro entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "Detecção de Anomalias",
+  "palavrasChave": [
+    "aprendizado de máquina",
+    "rotulagem",
+    "conjunto de dados",
+    "SOC"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-11-17",
+  "ano": 2024,
+  "veiculo": "Workshop de Operações de Segurança",
+  "paginas": "158-169",
+  "citacoes": 18,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-deteccao-de-anomalias-22",
+  "imagem": "https://picsum.photos/seed/gepiseg-deteccao-de-anomalias-22/640/360",
+  "capa": {
+    "cor": "#2F6F4E",
+    "iniciais": "DE"
+  },
+  "autorPrincipal": {
+    "nome": "Larissa Monteiro Dias",
+    "url": "json/pesquisador/11.json"
+  },
+  "autores": [
+    {
+      "nome": "Larissa Monteiro Dias",
+      "url": "json/pesquisador/11.json"
+    },
+    {
+      "nome": "Felipe Nogueira Castro",
+      "url": "json/pesquisador/6.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/11.json",
+    "json/pesquisador/6.json"
+  ],
+  "url": "json/artigo/22.json",
+  "created": "2024-03-27T12:30:00.000Z"
+}

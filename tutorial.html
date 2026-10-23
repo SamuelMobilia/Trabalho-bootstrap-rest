@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEPISEG — Tutorial dos dados</title>
+<style>
+  :root {
+    --tinta:    #16202b;
+    --tinta-2:  #4a5765;
+    --tinta-3:  #78838f;
+    --papel:    #ffffff;
+    --fundo:    #f2f4f7;
+    --linha:    #dde2e9;
+    --destaque: #1f6f4e;
+    --alerta:   #9a5b12;
+    --codigo:   #f6f8fa;
+    --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--fundo);
+    color: var(--tinta);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .folha {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--papel);
+    padding: 48px 56px 64px;
+    border: 1px solid var(--linha);
+    border-top: 0;
+  }
+
+  /* ---------- capa ---------- */
+
+  header {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--tinta);
+    color: #fff;
+    padding: 40px 56px;
+  }
+  header .etiqueta {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: #9fb3a9;
+  }
+  header h1 { margin: 10px 0 8px; font-size: 32px; line-height: 1.2; }
+  header p { margin: 0; color: #c3ccd4; max-width: 46em; }
+
+  /* ---------- texto ---------- */
+
+  h2 {
+    font-size: 21px;
+    margin: 44px 0 14px;
+    padding-top: 18px;
+    border-top: 2px solid var(--tinta);
+  }
+  h2:first-of-type { margin-top: 8px; }
+  h2 .n {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--destaque);
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  h3 { font-size: 16px; margin: 28px 0 8px; }
+  p  { margin: 10px 0; max-width: 64em; }
+  ul { margin: 10px 0; padding-left: 22px; }
+  li { margin: 5px 0; }
+
+  code {
+    font-family: var(--mono);
+    font-size: .88em;
+    background: var(--codigo);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  pre {
+    background: var(--codigo);
+    border: 1px solid var(--linha);
+    border-left: 3px solid var(--destaque);
+    border-radius: 4px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    margin: 12px 0;
+  }
+  pre code { background: none; padding: 0; font-size: 13.5px; line-height: 1.55; }
+
+  /* ---------- caixas ---------- */
+
+  .nota, .aviso {
+    border: 1px solid var(--linha);
+    border-left: 3px solid var(--destaque);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    background: #fbfcfd;
+  }
+  .aviso { border-left-color: var(--alerta); }
+  .nota strong, .aviso strong { display: block; margin-bottom: 3px; }
+  .nota p, .aviso p { margin: 4px 0; font-size: 14.5px; color: var(--tinta-2); }
+
+  /* ---------- saída ao vivo ---------- */
+
+  .saida {
+    border: 1px solid var(--linha);
+    border-radius: 4px;
+    margin: 12px 0 20px;
+    overflow: hidden;
+  }
+  .saida .topo {
+    background: var(--codigo);
+    border-bottom: 1px solid var(--linha);
+    padding: 6px 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--tinta-3);
+  }
+  .saida .corpo {
+    padding: 12px 16px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    white-space: pre-wrap;
+    color: var(--tinta-2);
+    max-height: 260px;
+    overflow: auto;
+  }
+
+  /* ---------- tabela ---------- */
+
+  .rolar { overflow-x: auto; margin: 14px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 420px; }
+  th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--linha); vertical-align: top; }
+  th { font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta-3); font-weight: 600; }
+  td code { font-size: 12.5px; }
+
+  footer {
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--papel);
+    border: 1px solid var(--linha);
+    border-top: 0;
+    padding: 24px 56px 40px;
+    font-size: 13.5px;
+    color: var(--tinta-3);
+  }
+
+  /* ---------- impressão / PDF ---------- */
+
+  @media print {
+    @page { margin: 14mm; }
+    body { background: #fff; padding: 0; font-size: 11pt; }
+    header { padding: 24px 0; background: #fff; color: var(--tinta); border-bottom: 3px solid var(--tinta); }
+    header .etiqueta { color: var(--destaque); }
+    header p { color: var(--tinta-2); }
+    .folha, footer { border: 0; padding: 0; max-width: none; }
+    h2 { page-break-after: avoid; margin-top: 26px; }
+    h3 { page-break-after: avoid; }
+    pre, .saida, .nota, .aviso, table { page-break-inside: avoid; }
+    .saida .corpo { max-height: none; }
+    .imprimir { display: none; }
+  }
+
+  .imprimir {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 18px;
+    background: var(--tinta);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,.22);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="etiqueta">GEPISEG · material de apoio</div>
+  <h1>Como usar os dados nas suas telas</h1>
+  <p>
+    Um pacote com 12 pesquisadores e 30 artigos, e um arquivo JavaScript que
+    funciona como se fosse uma API. Dá para montar a tela inteira sem servidor
+    e sem internet para os dados.
+  </p>
+</header>
+
+<div class="folha">
+
+<h2><span class="n">PASSO 1</span>Os arquivos</h2>
+
+<p>O pacote vem organizado assim. Crie o seu HTML <strong>na raiz</strong>, ao lado das duas pastas:</p>
+
+<pre><code>sua-pasta/
+  index.html          &lt;- o seu arquivo
+  js/
+    dados.js          os dados
+    gepiseg-api.js    o que você usa para buscar
+  json/
+    pesquisadores.json      os 12, numa lista só
+    artigos.json            os 30, numa lista só
+    pesquisador/1.json      cada um também sozinho
+    artigo/1.json           …até o 30</code></pre>
+
+<p>
+  Você só precisa dos dois arquivos de <code>js/</code> para a tela funcionar.
+  Os de <code>json/</code> são para abrir e olhar como os dados são.
+</p>
+
+<p>
+  A <code>url</code> de um recurso <strong>é o caminho do arquivo dele</strong>.
+  O artigo 7 tem <code>"url": "json/artigo/7.json"</code> — abra esse caminho no
+  navegador e você vê exatamente o que
+  <code>api.artigos.porId(7)</code> devolve.
+</p>
+
+<div class="nota">
+  <strong>Por isso a relação funciona com <code>fetch</code> puro</strong>
+  <p>
+    Como a referência é um caminho que existe, dá para seguir uma relação sem o
+    cliente, só com o navegador:
+  </p>
+</div>
+
+<pre><code>const artigo = await (await fetch('json/artigo/7.json')).json();
+const autor  = await (await fetch(artigo.autorPrincipal.url)).json();
+
+autor.nome;   // "Diego Albuquerque Rosa"</code></pre>
+
+<p>
+  Isso precisa de servidor local (<code>npx serve</code>), porque o navegador
+  bloqueia <code>fetch</code> de arquivo aberto com duplo clique. Com os scripts
+  do passo seguinte, funciona sem servidor.
+</p>
+
+<div class="nota">
+  <strong>Por que separado em pastas?</strong>
+  <p>
+    Para ficar claro o que é código e o que é dado. É assim que um projeto de
+    verdade se organiza, e evita uma pasta só com tudo misturado quando vocês
+    forem somando CSS e imagens.
+  </p>
+</div>
+
+<h2><span class="n">PASSO 2</span>A primeira tela</h2>
+
+<p>Crie um <code>index.html</code> na raiz (ao lado das pastas <code>js/</code> e <code>json/</code>) e cole isto:</p>
+
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;body&gt;
+  &lt;div id="lista"&gt;&lt;/div&gt;
+
+  &lt;script src="js/dados.js"&gt;&lt;/script&gt;
+  &lt;script src="js/gepiseg-api.js"&gt;&lt;/script&gt;
+  &lt;script&gt;
+    const api = GepisegAPI.criar();
+
+    async function mostrar() {
+      const r = await api.artigos.listar();
+
+      for (const artigo of r.results) {
+        document.getElementById('lista').innerHTML +=
+          '&lt;h2&gt;' + artigo.titulo + '&lt;/h2&gt;';
+      }
+    }
+
+    mostrar();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>Dê duplo clique no arquivo. Devem aparecer os títulos dos artigos.</p>
+
+<div class="nota">
+  <strong>Deu erro "Dados não encontrados"?</strong>
+  <p>
+    Duas causas possíveis: o <code>dados.js</code> tem que vir <strong>antes</strong>
+    do <code>gepiseg-api.js</code>, e os dois caminhos começam com
+    <code>js/</code>. Confira as duas linhas.
+  </p>
+</div>
+
+<h2><span class="n">PASSO 3</span>Listar</h2>
+
+<p>Toda listagem devolve duas coisas: <code>results</code> com a lista, e <code>info</code> com os números.</p>
+
+<pre><code>const r = await api.artigos.listar();
+
+r.results        // a lista de artigos
+r.info.count     // quantos existem no total
+r.info.pages     // quantas páginas
+r.info.next      // "json/artigos.json?page=2", ou null se acabou
+r.info.prev      // idem para a anterior, ou null se é a primeira</code></pre>
+
+<div class="saida">
+  <div class="topo">resultado de verdade, rodando nesta página</div>
+  <div class="corpo" id="s-listar">carregando…</div>
+</div>
+
+<div class="nota">
+  <strong>Para os botões de paginação</strong>
+  <p>Use <code>info.next</code> e <code>info.prev</code>: quando vierem <code>null</code>, desabilite o botão. É mais confiável que comparar números de página.</p>
+</div>
+
+<h2><span class="n">PASSO 4</span>Buscar e filtrar</h2>
+
+<p>Passe um objeto com o que você quer. Pode combinar quantos quiser.</p>
+
+<pre><code>await api.artigos.listar({ q: 'phishing' });            // busca livre
+await api.artigos.listar({ ano: 2025 });                // de um ano
+await api.artigos.listar({ tema: 'IoT' });              // de um tema
+await api.artigos.listar({ pesquisador: 1 });           // de uma pessoa
+await api.artigos.listar({ ordenar: 'citacoes' });      // mais citados
+await api.artigos.listar({ pagina: 2, porPagina: 6 });  // paginando
+
+// combinando
+await api.artigos.listar({ q: 'IoT', ano: 2025, ordenar: 'citacoes' });</code></pre>
+
+<p>A busca ignora acento e maiúscula: procurar <code>seguranca</code> acha <code>Segurança</code>.</p>
+
+<div class="saida">
+  <div class="topo">busca por "seguranca" (sem acento)</div>
+  <div class="corpo" id="s-busca">carregando…</div>
+</div>
+
+<h2><span class="n">PASSO 5</span>Pegar um só</h2>
+
+<p>Aqui vem o objeto direto — <strong>sem</strong> <code>.results</code>.</p>
+
+<pre><code>const artigo = await api.artigos.porId(1);
+const pessoa = await api.pesquisadores.porId(1);
+
+artigo.titulo
+pessoa.nome</code></pre>
+
+<div class="saida">
+  <div class="topo">api.artigos.porId(1)</div>
+  <div class="corpo" id="s-porid">carregando…</div>
+</div>
+
+<h2><span class="n">PASSO 6</span>Os autores de um artigo</h2>
+
+<p>
+  O artigo não carrega o pesquisador inteiro dentro dele. Carrega o nome e o
+  link — o suficiente para desenhar um card sem buscar mais nada.
+</p>
+
+<pre><code>artigo.autores
+// [ { nome: "Ana Clara Figueiredo", url: "json/pesquisador/1.json" }, ... ]
+
+artigo.autorPrincipal
+// { nome: "Ana Clara Figueiredo", url: "json/pesquisador/1.json" }</code></pre>
+
+<p>Do outro lado vale o mesmo: o pesquisador lista os artigos dele com título e link.</p>
+
+<pre><code>pessoa.artigos
+// [ { titulo: "SSRF em arquiteturas de microsserviços...",
+//     url: "json/artigo/2.json" }, ... ]</code></pre>
+
+<p>
+  Dá para montar a página de perfil inteira — nome, bio, métricas e a lista de
+  publicações — sem nenhuma busca extra.
+</p>
+
+<p>Na tela de detalhe, quando você quiser a pessoa inteira (bio, áreas, métricas), siga o link:</p>
+
+<pre><code>const pessoa  = await api.seguir(artigo.autorPrincipal);
+const pessoas = await api.seguir(artigo.pesquisadores);  // a lista toda
+
+// vale nos dois sentidos
+const trabalhos = await api.seguir(pessoa.artigos);</code></pre>
+
+<p>
+  O <code>seguir</code> aceita tanto o objeto (<code>{ nome, url }</code>) quanto
+  a URL solta, e aceita uma lista inteira de uma vez.
+</p>
+
+<div class="saida">
+  <div class="topo">api.seguir(artigo.pesquisadores)</div>
+  <div class="corpo" id="s-seguir">carregando…</div>
+</div>
+
+<h2><span class="n">PASSO 7</span>As fotos</h2>
+
+<p>O campo <code>imagem</code> carrega de verdade, tanto no artigo quanto no pesquisador:</p>
+
+<pre><code>&lt;img src="${artigo.imagem}" alt=""&gt;
+&lt;img src="${pessoa.imagem}" alt="${pessoa.nome}"&gt;</code></pre>
+
+<p>
+  A foto é sempre a mesma: cada registro tem uma <code>fotoSeed</code> fixa e a
+  URL se monta a partir dela. Dar F5 não troca a imagem.
+</p>
+
+<div class="aviso">
+  <strong>Sempre tenha um plano B para a imagem</strong>
+  <p>
+    As fotos vêm de um serviço de fora. Se a internet cair, você não quer um
+    ícone de imagem quebrada na tela. Todo pesquisador tem <code>iniciais</code>
+    e <code>cor</code>; todo artigo tem <code>capa.cor</code>:
+  </p>
+</div>
+
+<pre><code>&lt;img src="..." onerror="this.replaceWith(avatarDeIniciais(pessoa))"&gt;
+
+// ou, mais simples: nem tenta a imagem
+&lt;div style="background: ${pessoa.cor}"&gt;${pessoa.iniciais}&lt;/div&gt;</code></pre>
+
+<div class="saida">
+  <div class="topo">as 4 primeiras fotos, carregadas agora</div>
+  <div class="corpo" id="s-fotos">carregando…</div>
+</div>
+
+<h2><span class="n">PASSO 8</span>Os três erros que todo mundo comete</h2>
+
+<h3>1. Achar que busca vazia devolve lista vazia</h3>
+
+<p>Não devolve: <strong>dá erro</strong>. Então o seu "nenhum resultado" mora no <code>catch</code>.</p>
+
+<pre><code>try {
+  const r = await api.artigos.listar({ q: 'xyz' });
+  mostrarLista(r.results);
+} catch (e) {
+  document.getElementById('lista').innerHTML = 'Nenhum artigo encontrado.';
+}</code></pre>
+
+<p>Vale também para <code>porId</code> com um id que não existe.</p>
+
+<div class="saida">
+  <div class="topo">api.artigos.listar({ q: 'xyz' })</div>
+  <div class="corpo" id="s-erro">carregando…</div>
+</div>
+
+<h3>2. Esquecer o <code>await</code></h3>
+
+<p>
+  Toda chamada é assíncrona. Sem <code>await</code> você recebe uma
+  <code>Promise</code>, não os dados — e a tela mostra
+  <code>[object Promise]</code>.
+</p>
+
+<pre><code>const r = api.artigos.listar();        // ERRADO
+const r = await api.artigos.listar();  // certo</code></pre>
+
+<p>E a função que usa <code>await</code> precisa ser <code>async</code>:</p>
+
+<pre><code>async function mostrar() {
+  const r = await api.artigos.listar();
+}</code></pre>
+
+<h3>3. Não mostrar que está carregando</h3>
+
+<p>
+  Toda chamada demora 120 ms de propósito, para vocês praticarem isso. Escreva
+  "carregando…" antes de chamar, e troque pelo conteúdo quando a resposta chegar.
+</p>
+
+<pre><code>lista.innerHTML = 'carregando…';
+const r = await api.artigos.listar();
+lista.innerHTML = montarHtml(r.results);</code></pre>
+
+<p>Enquanto estiver depurando, pode desligar o atraso:</p>
+
+<pre><code>const api = GepisegAPI.criar({ atrasoMs: 0 });</code></pre>
+
+<h2><span class="n">PASSO 9</span>Montando os filtros da tela</h2>
+
+<p>Para preencher um <code>&lt;select&gt;</code> sem digitar as opções na mão:</p>
+
+<pre><code>const f = await api.filtros();
+
+f.temas          // lista de temas
+f.anos           // lista de anos
+f.areas
+f.veiculos
+f.palavrasChave
+f.titulacoes</code></pre>
+
+<pre><code>for (const tema of f.temas) {
+  select.innerHTML += '&lt;option&gt;' + tema + '&lt;/option&gt;';
+}</code></pre>
+
+<div class="saida">
+  <div class="topo">api.filtros()</div>
+  <div class="corpo" id="s-filtros">carregando…</div>
+</div>
+
+<h2><span class="n">CONSULTA</span>Todos os campos</h2>
+
+<h3>Artigo</h3>
+<pre><code>id             1
+titulo         "Verificação de dependências em esteiras..."
+resumo         um parágrafo
+conteudo       texto completo, com seções (para a página de detalhe)
+tipo           artigo_evento | artigo_periodico | capitulo_livro | relatorio_tecnico
+assunto        "Segurança da Informação"
+tema           "DevSecOps"
+palavrasChave  ["DevSecOps", "CI/CD", ...]
+idioma         "pt-BR"
+dataLancamento "2025-08-14"
+ano            2025
+veiculo        onde foi publicado
+paginas        "11-22"
+citacoes       23
+status         "publicado"
+imagem         URL da capa
+fotoSeed       semente que gera a capa
+capa           { cor, iniciais }     <- plano B da imagem
+autorPrincipal { nome, url }
+autores        [ { nome, url }, ... ]
+pesquisadores  [ "json/pesquisador/1.json", ... ]
+url            caminho do arquivo deste artigo
+created        "2025-06-12T12:30:00.000Z"</code></pre>
+
+<h3>Pesquisador</h3>
+<pre><code>id             1
+nome           "Ana Clara Figueiredo"
+titulacao      "Doutora"
+cargo          "Professora Adjunta"
+instituicao    "UniAlfa"
+unidade        nome do grupo
+areas          ["Segurança de Aplicações", "DevSecOps"]
+linhaPesquisa  uma frase
+bio            um parágrafo
+email          "ana.clara@unialfa.edu.br"
+imagem         URL do avatar
+fotoSeed       semente que gera o avatar
+iniciais       "AF"                  <- plano B da imagem
+cor            "#2F6F4E"
+ingresso       "2018-03-01"
+ativo          true
+metricas       { totalArtigos, totalCitacoes, indiceH,
+                 comoAutorPrincipal, primeiroAno, ultimoAno }
+artigos        [ { titulo, url }, ... ]
+url            caminho do arquivo deste pesquisador
+created        "2018-06-12T12:30:00.000Z"</code></pre>
+
+<h3>Filtros aceitos</h3>
+<pre><code>api.artigos.listar({
+  q, pesquisador, autorPrincipal,
+  tema, veiculo, tipo, status, palavraChave,
+  ano, de, ate,              // de/ate no formato 2025-03-14
+  citacoesMinimas,
+  ordenar,                   // recentes | antigos | citacoes | titulo
+  pagina, porPagina          // porPagina: máximo 100, padrão 12
+});
+
+api.pesquisadores.listar({
+  q, nome, area, titulacao, ativo,
+  ordenar,                   // nome | artigos | citacoes
+  pagina, porPagina
+});</code></pre>
+
+</div>
+
+<footer>
+  <p>
+    O formato das respostas segue o da Rick and Morty API
+    (<code>rickandmortyapi.com</code>). Se um dia praticarem com outra API
+    pública, vão encontrar o mesmo desenho: <code>info</code> +
+    <code>results</code>, relação por link, erro com status 404. A diferença é
+    que lá o link é uma URL completa (<code>https://…/character/1</code>) e aqui
+    é o caminho do arquivo — porque aqui ele precisa abrir de verdade.
+  </p>
+  <p>
+    Os pesquisadores e artigos são <strong>fictícios</strong>, criados para o
+    exercício. Não há perfil de rede social, Lattes nem ORCID nos dados: um
+    endereço montado a partir de um nome inventado costuma cair no perfil de
+    alguém de verdade. Os avatares são ilustrações geradas, não fotos de pessoas.
+  </p>
+</footer>
+
+<button class="imprimir" onclick="window.print()">Salvar como PDF</button>
+
+<script src="js/dados.js"></script>
+<script src="js/gepiseg-api.js"></script>
+<script>
+  // Os blocos de "resultado" desta página rodam de verdade, usando os mesmos
+  // arquivos que vocês vão usar. O que está impresso aqui é o que sai aí.
+  const api = GepisegAPI.criar({ atrasoMs: 0 });
+  const põe = (id, texto) => { document.getElementById(id).textContent = texto; };
+
+  (async function () {
+    const r = await api.artigos.listar({ porPagina: 3 });
+    põe('s-listar',
+      'r.info  = ' + JSON.stringify(r.info, null, 2) + '\n\n' +
+      'r.results tem ' + r.results.length + ' artigos. O primeiro:\n' +
+      '  ' + r.results[0].titulo);
+
+    const b = await api.artigos.listar({ q: 'seguranca' });
+    põe('s-busca',
+      b.info.count + ' artigos encontrados. Os três primeiros:\n' +
+      b.results.slice(0, 3).map(a => '  · ' + a.titulo).join('\n'));
+
+    const a = await api.artigos.porId(1);
+    põe('s-porid',
+      'titulo    ' + a.titulo + '\n' +
+      'ano       ' + a.ano + '\n' +
+      'veiculo   ' + a.veiculo + '\n' +
+      'citacoes  ' + a.citacoes + '\n' +
+      'autores   ' + a.autores.map(x => x.nome).join(', '));
+
+    const pessoas = await api.seguir(a.pesquisadores);
+    põe('s-seguir', pessoas.map(p =>
+      p.nome + ' — ' + p.titulacao + '\n' +
+      '  ' + p.areas.join(', ') + '\n' +
+      '  ' + p.metricas.totalArtigos + ' artigos, ' +
+      p.metricas.totalCitacoes + ' citações'
+    ).join('\n\n'));
+
+    try {
+      await api.artigos.listar({ q: 'xyz' });
+      põe('s-erro', 'não deveria chegar aqui');
+    } catch (e) {
+      põe('s-erro',
+        'A chamada LANÇOU um erro:\n' +
+        '  e.status      = ' + e.status + '\n' +
+        '  e.corpo.error = "' + e.corpo.error + '"');
+    }
+
+    const f = await api.filtros();
+    põe('s-filtros',
+      'temas (' + f.temas.length + '): ' + f.temas.slice(0, 5).join(', ') + ', …\n' +
+      'anos: ' + f.anos.join(', ') + '\n' +
+      'titulacoes: ' + f.titulacoes.join(', '));
+
+    // As fotos: montadas como <img>, com as iniciais de plano B no onerror.
+    const lista = await api.pesquisadores.listar({ porPagina: 4 });
+    const caixa = document.getElementById('s-fotos');
+    caixa.textContent = '';
+    for (const p of lista.results) {
+      const img = document.createElement('img');
+      img.src = p.imagem;
+      img.alt = p.nome;
+      img.width = 52;
+      img.height = 52;
+      img.style.cssText = 'border-radius:50%;margin-right:8px;vertical-align:middle';
+      img.onerror = function () {
+        const bolha = document.createElement('span');
+        bolha.textContent = p.iniciais;
+        bolha.style.cssText =
+          'display:inline-grid;place-items:center;width:52px;height:52px;' +
+          'border-radius:50%;margin-right:8px;vertical-align:middle;color:#fff;' +
+          'font-weight:bold;background:' + p.cor;
+        img.replaceWith(bolha);
+      };
+      caixa.appendChild(img);
+    }
+  })();
+</script>
+
+</body>
+</html>

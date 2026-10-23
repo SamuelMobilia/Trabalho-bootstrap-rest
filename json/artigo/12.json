@@ -1,0 +1,48 @@
+{
+  "id": 12,
+  "titulo": "Fadiga de alerta em centros de operação: causas e intervenções",
+  "resumo": "Investigamos por que analistas de plantão passam a ignorar categorias inteiras de alerta corretamente configuradas. A intervenção de maior efeito não foi reduzir o volume, e sim tornar visível a consequência de cada decisão de triagem.",
+  "conteudo": "## Resumo\nInvestigamos por que analistas de plantão passam a ignorar categorias inteiras de alerta corretamente configuradas. A intervenção de maior efeito não foi reduzir o volume, e sim tornar visível a consequência de cada decisão de triagem.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Resposta a Incidentes do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Felipe Nogueira Castro, Isabela Correia Lima entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "Resposta a Incidentes",
+  "palavrasChave": [
+    "SOC",
+    "fadiga de alerta",
+    "fator humano",
+    "triagem"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-01-22",
+  "ano": 2024,
+  "veiculo": "Workshop de Operações de Segurança",
+  "paginas": "88-99",
+  "citacoes": 26,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-resposta-a-incidentes-12",
+  "imagem": "https://picsum.photos/seed/gepiseg-resposta-a-incidentes-12/640/360",
+  "capa": {
+    "cor": "#9B3B5A",
+    "iniciais": "RE"
+  },
+  "autorPrincipal": {
+    "nome": "Felipe Nogueira Castro",
+    "url": "json/pesquisador/6.json"
+  },
+  "autores": [
+    {
+      "nome": "Felipe Nogueira Castro",
+      "url": "json/pesquisador/6.json"
+    },
+    {
+      "nome": "Isabela Correia Lima",
+      "url": "json/pesquisador/9.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/6.json",
+    "json/pesquisador/9.json"
+  ],
+  "url": "json/artigo/12.json",
+  "created": "2024-01-25T12:30:00.000Z"
+}

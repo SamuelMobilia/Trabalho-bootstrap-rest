@@ -1,0 +1,43 @@
+{
+  "id": 24,
+  "titulo": "Ofuscação e seu efeito prático sobre o tempo de análise",
+  "resumo": "Medimos o tempo adicional imposto por quatro técnicas de ofuscação a analistas experientes. A ofuscação multiplica o custo de análise, mas nenhuma das técnicas avaliadas impediu a recuperação da lógica alvo.",
+  "conteudo": "## Resumo\nMedimos o tempo adicional imposto por quatro técnicas de ofuscação a analistas experientes. A ofuscação multiplica o custo de análise, mas nenhuma das técnicas avaliadas impediu a recuperação da lógica alvo.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Engenharia Reversa do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Marcos Vinícius Ferraz entre 2022 e 2023. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "Engenharia Reversa",
+  "palavrasChave": [
+    "ofuscação",
+    "engenharia reversa",
+    "proteção de software",
+    "análise"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2023-01-16",
+  "ano": 2023,
+  "veiculo": "Conferência Latino-Americana de Segurança Ofensiva",
+  "paginas": "172-183",
+  "citacoes": 49,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-engenharia-reversa-24",
+  "imagem": "https://picsum.photos/seed/gepiseg-engenharia-reversa-24/640/360",
+  "capa": {
+    "cor": "#2C5282",
+    "iniciais": "EN"
+  },
+  "autorPrincipal": {
+    "nome": "Marcos Vinícius Ferraz",
+    "url": "json/pesquisador/12.json"
+  },
+  "autores": [
+    {
+      "nome": "Marcos Vinícius Ferraz",
+      "url": "json/pesquisador/12.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/12.json"
+  ],
+  "url": "json/artigo/24.json",
+  "created": "2023-01-22T12:30:00.000Z"
+}

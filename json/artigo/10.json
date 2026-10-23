@@ -1,0 +1,48 @@
+{
+  "id": 10,
+  "titulo": "Relatório de impacto à proteção de dados como artefato de engenharia",
+  "resumo": "Propomos tratar o relatório de impacto à proteção de dados como artefato versionado junto ao código, e não como documento jurídico apartado. A abordagem foi aplicada em duas organizações ao longo de dezoito meses.",
+  "conteudo": "## Resumo\nPropomos tratar o relatório de impacto à proteção de dados como artefato versionado junto ao código, e não como documento jurídico apartado. A abordagem foi aplicada em duas organizações ao longo de dezoito meses.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Privacidade e LGPD do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Eduarda Mattos Vieira, Henrique Barros Pacheco entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "capitulo_livro",
+  "assunto": "Segurança da Informação",
+  "tema": "Privacidade e LGPD",
+  "palavrasChave": [
+    "LGPD",
+    "RIPD",
+    "governança",
+    "processo"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-11-23",
+  "ano": 2024,
+  "veiculo": "Governança de Dados na Prática (Editora Universitária)",
+  "paginas": "74-85",
+  "citacoes": 15,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-privacidade-e-lgpd-10",
+  "imagem": "https://picsum.photos/seed/gepiseg-privacidade-e-lgpd-10/640/360",
+  "capa": {
+    "cor": "#A6761D",
+    "iniciais": "PR"
+  },
+  "autorPrincipal": {
+    "nome": "Eduarda Mattos Vieira",
+    "url": "json/pesquisador/5.json"
+  },
+  "autores": [
+    {
+      "nome": "Eduarda Mattos Vieira",
+      "url": "json/pesquisador/5.json"
+    },
+    {
+      "nome": "Henrique Barros Pacheco",
+      "url": "json/pesquisador/8.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/5.json",
+    "json/pesquisador/8.json"
+  ],
+  "url": "json/artigo/10.json",
+  "created": "2024-03-03T12:30:00.000Z"
+}

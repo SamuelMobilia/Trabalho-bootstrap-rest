@@ -1,0 +1,48 @@
+{
+  "id": 18,
+  "titulo": "Pretexto e autoridade: por que o pedido urgente funciona",
+  "resumo": "Revisamos a literatura sobre conformidade a pedidos que invocam autoridade e urgência, aplicada ao contexto de fraude corporativa. O capítulo conecta achados clássicos de psicologia social a padrões observados em casos reais.",
+  "conteudo": "## Resumo\nRevisamos a literatura sobre conformidade a pedidos que invocam autoridade e urgência, aplicada ao contexto de fraude corporativa. O capítulo conecta achados clássicos de psicologia social a padrões observados em casos reais.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Engenharia Social do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Isabela Correia Lima, Felipe Nogueira Castro entre 2022 e 2023. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "capitulo_livro",
+  "assunto": "Segurança da Informação",
+  "tema": "Engenharia Social",
+  "palavrasChave": [
+    "engenharia social",
+    "pretexto",
+    "autoridade",
+    "urgência"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2023-07-19",
+  "ano": 2023,
+  "veiculo": "Fator Humano em Segurança da Informação (Editora Universitária)",
+  "paginas": "130-141",
+  "citacoes": 62,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-engenharia-social-18",
+  "imagem": "https://picsum.photos/seed/gepiseg-engenharia-social-18/640/360",
+  "capa": {
+    "cor": "#A6761D",
+    "iniciais": "EN"
+  },
+  "autorPrincipal": {
+    "nome": "Isabela Correia Lima",
+    "url": "json/pesquisador/9.json"
+  },
+  "autores": [
+    {
+      "nome": "Isabela Correia Lima",
+      "url": "json/pesquisador/9.json"
+    },
+    {
+      "nome": "Felipe Nogueira Castro",
+      "url": "json/pesquisador/6.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/9.json",
+    "json/pesquisador/6.json"
+  ],
+  "url": "json/artigo/18.json",
+  "created": "2023-07-10T12:30:00.000Z"
+}

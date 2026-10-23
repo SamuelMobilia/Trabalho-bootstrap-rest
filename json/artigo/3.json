@@ -1,0 +1,43 @@
+{
+  "id": 3,
+  "titulo": "Implementações de AES em microcontroladores: análise de consumo e canal lateral",
+  "resumo": "Comparamos cinco implementações de AES em microcontroladores de baixo custo quanto à resistência a análise diferencial de consumo. Implementações otimizadas para velocidade apresentaram vazamento mensurável em todas as plataformas testadas.",
+  "conteudo": "## Resumo\nComparamos cinco implementações de AES em microcontroladores de baixo custo quanto à resistência a análise diferencial de consumo. Implementações otimizadas para velocidade apresentaram vazamento mensurável em todas as plataformas testadas.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Criptografia Aplicada do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Bruno Tavares Lemos entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Criptografia Aplicada",
+  "palavrasChave": [
+    "AES",
+    "canal lateral",
+    "microcontrolador",
+    "consumo de energia"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-10-13",
+  "ano": 2024,
+  "veiculo": "Journal of Cryptographic Engineering",
+  "paginas": "25-36",
+  "citacoes": 56,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-criptografia-aplicada-3",
+  "imagem": "https://picsum.photos/seed/gepiseg-criptografia-aplicada-3/640/360",
+  "capa": {
+    "cor": "#1F6F72",
+    "iniciais": "CR"
+  },
+  "autorPrincipal": {
+    "nome": "Bruno Tavares Lemos",
+    "url": "json/pesquisador/2.json"
+  },
+  "autores": [
+    {
+      "nome": "Bruno Tavares Lemos",
+      "url": "json/pesquisador/2.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/2.json"
+  ],
+  "url": "json/artigo/3.json",
+  "created": "2024-04-07T12:30:00.000Z"
+}

@@ -1,0 +1,45 @@
+{
+  "id": 4,
+  "nome": "Diego Albuquerque Rosa",
+  "titulacao": "Mestre",
+  "cargo": "Pesquisador",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Teste de Intrusão",
+    "Red Team"
+  ],
+  "linhaPesquisa": "Metodologias de teste de intrusão em aplicações web corporativas",
+  "bio": "Atua na ponte entre a academia e a operação: traz de engajamentos reais os padrões de falha que viram objeto de estudo no grupo.",
+  "email": "diego.albuquerque@unialfa.edu.br",
+  "fotoSeed": "diego-albuquerque-rosa",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=diego-albuquerque-rosa&backgroundColor=6B4E9B&radius=50",
+  "iniciais": "DR",
+  "cor": "#6B4E9B",
+  "ingresso": "2021-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 3,
+    "totalCitacoes": 107,
+    "indiceH": 3,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2024,
+    "ultimoAno": 2025
+  },
+  "artigos": [
+    {
+      "titulo": "SSRF em arquiteturas de microsserviços: do acesso interno ao roubo de credencial",
+      "url": "json/artigo/2.json"
+    },
+    {
+      "titulo": "Padrões recorrentes de falha em testes de intrusão: análise de 60 engajamentos",
+      "url": "json/artigo/7.json"
+    },
+    {
+      "titulo": "Escalonamento de privilégio por confusão de identidade em APIs REST",
+      "url": "json/artigo/8.json"
+    }
+  ],
+  "url": "json/pesquisador/4.json",
+  "created": "2021-09-18T12:30:00.000Z"
+}

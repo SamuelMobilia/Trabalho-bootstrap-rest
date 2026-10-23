@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<body>
+  <div id="lista"></div>
+
+  <script src="js/dados.js"></script>
+  <script src="js/gepiseg-api.js"></script>
+  <script>
+    const api = GepisegAPI.criar();
+
+    async function mostrar() {
+      const r = await api.artigos.listar();
+
+      for (const artigo of r.results) {
+        document.getElementById('lista').innerHTML +=
+          '<h2>' + artigo.titulo + '</h2>';
+      }
+    }
+
+    mostrar();
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "id": 9,
+  "titulo": "Direito ao esquecimento em sistemas com replicação: o apagamento que não apaga",
+  "resumo": "Examinamos a distância entre a exclusão exigida pela legislação e a exclusão efetiva em arquiteturas com réplicas, backups e registros de auditoria. Apresentamos um modelo de expurgo que mantém rastreabilidade sem reter dado pessoal.",
+  "conteudo": "## Resumo\nExaminamos a distância entre a exclusão exigida pela legislação e a exclusão efetiva em arquiteturas com réplicas, backups e registros de auditoria. Apresentamos um modelo de expurgo que mantém rastreabilidade sem reter dado pessoal.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Privacidade e LGPD do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Eduarda Mattos Vieira entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Privacidade e LGPD",
+  "palavrasChave": [
+    "LGPD",
+    "privacidade",
+    "retenção",
+    "replicação"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-04-10",
+  "ano": 2025,
+  "veiculo": "Revista de Direito e Tecnologia",
+  "paginas": "67-78",
+  "citacoes": 44,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-privacidade-e-lgpd-9",
+  "imagem": "https://picsum.photos/seed/gepiseg-privacidade-e-lgpd-9/640/360",
+  "capa": {
+    "cor": "#6B4E9B",
+    "iniciais": "PR"
+  },
+  "autorPrincipal": {
+    "nome": "Eduarda Mattos Vieira",
+    "url": "json/pesquisador/5.json"
+  },
+  "autores": [
+    {
+      "nome": "Eduarda Mattos Vieira",
+      "url": "json/pesquisador/5.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/5.json"
+  ],
+  "url": "json/artigo/9.json",
+  "created": "2025-10-19T12:30:00.000Z"
+}

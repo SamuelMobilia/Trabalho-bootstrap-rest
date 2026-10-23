@@ -1,0 +1,45 @@
+{
+  "id": 11,
+  "nome": "Larissa Monteiro Dias",
+  "titulacao": "Doutora",
+  "cargo": "Professora Adjunta",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Aprendizado de Máquina",
+    "Detecção de Anomalias"
+  ],
+  "linhaPesquisa": "Modelos de detecção de anomalia em tráfego de rede corporativa",
+  "bio": "Trabalha com o problema mais chato da área: detector que funciona no conjunto de teste e desaba em produção.",
+  "email": "larissa.monteiro@unialfa.edu.br",
+  "fotoSeed": "larissa-monteiro-dias",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=larissa-monteiro-dias&backgroundColor=2C5282&radius=50",
+  "iniciais": "LD",
+  "cor": "#2C5282",
+  "ingresso": "2021-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 3,
+    "totalCitacoes": 82,
+    "indiceH": 3,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2024,
+    "ultimoAno": 2025
+  },
+  "artigos": [
+    {
+      "titulo": "Tempo de permanência do atacante: medição em ambientes monitorados",
+      "url": "json/artigo/11.json"
+    },
+    {
+      "titulo": "Detecção de anomalia em tráfego corporativo: por que o modelo desaba em produção",
+      "url": "json/artigo/21.json"
+    },
+    {
+      "titulo": "Rotulagem de incidentes para treinamento supervisionado: o gargalo que ninguém publica",
+      "url": "json/artigo/22.json"
+    }
+  ],
+  "url": "json/pesquisador/11.json",
+  "created": "2021-08-14T12:30:00.000Z"
+}

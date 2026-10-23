@@ -1,0 +1,48 @@
+{
+  "id": 8,
+  "titulo": "Escalonamento de privilégio por confusão de identidade em APIs REST",
+  "resumo": "Descrevemos uma classe de falha em que a API autentica corretamente e autoriza com o identificador errado, permitindo que um usuário legítimo alcance dados de outro. Propomos um teste automatizável que detecta o padrão sem conhecimento do domínio.",
+  "conteudo": "## Resumo\nDescrevemos uma classe de falha em que a API autentica corretamente e autoriza com o identificador errado, permitindo que um usuário legítimo alcance dados de outro. Propomos um teste automatizável que detecta o padrão sem conhecimento do domínio.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Teste de Intrusão do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Diego Albuquerque Rosa, Ana Clara Figueiredo entre 2023 e 2024. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "Teste de Intrusão",
+  "palavrasChave": [
+    "API",
+    "IDOR",
+    "controle de acesso",
+    "autorização"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2024-09-24",
+  "ano": 2024,
+  "veiculo": "Conferência Latino-Americana de Segurança Ofensiva",
+  "paginas": "60-71",
+  "citacoes": 37,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-teste-de-intrusao-8",
+  "imagem": "https://picsum.photos/seed/gepiseg-teste-de-intrusao-8/640/360",
+  "capa": {
+    "cor": "#2C5282",
+    "iniciais": "TE"
+  },
+  "autorPrincipal": {
+    "nome": "Diego Albuquerque Rosa",
+    "url": "json/pesquisador/4.json"
+  },
+  "autores": [
+    {
+      "nome": "Diego Albuquerque Rosa",
+      "url": "json/pesquisador/4.json"
+    },
+    {
+      "nome": "Ana Clara Figueiredo",
+      "url": "json/pesquisador/1.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/4.json",
+    "json/pesquisador/1.json"
+  ],
+  "url": "json/artigo/8.json",
+  "created": "2024-05-08T12:30:00.000Z"
+}

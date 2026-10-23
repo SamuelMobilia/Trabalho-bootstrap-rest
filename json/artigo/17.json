@@ -1,0 +1,43 @@
+{
+  "id": 17,
+  "titulo": "Simulações de phishing medem o quê? Uma crítica metodológica",
+  "resumo": "Argumentamos que a taxa de clique em simulações mede familiaridade com o formato da simulação, não resistência a engenharia social. Propomos indicadores alternativos baseados em comportamento de verificação e de notificação.",
+  "conteudo": "## Resumo\nArgumentamos que a taxa de clique em simulações mede familiaridade com o formato da simulação, não resistência a engenharia social. Propomos indicadores alternativos baseados em comportamento de verificação e de notificação.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Engenharia Social do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Isabela Correia Lima entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Engenharia Social",
+  "palavrasChave": [
+    "phishing",
+    "conscientização",
+    "metodologia",
+    "fator humano"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-12-06",
+  "ano": 2025,
+  "veiculo": "Revista de Psicologia Organizacional e Tecnologia",
+  "paginas": "123-134",
+  "citacoes": 47,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-engenharia-social-17",
+  "imagem": "https://picsum.photos/seed/gepiseg-engenharia-social-17/640/360",
+  "capa": {
+    "cor": "#6B4E9B",
+    "iniciais": "EN"
+  },
+  "autorPrincipal": {
+    "nome": "Isabela Correia Lima",
+    "url": "json/pesquisador/9.json"
+  },
+  "autores": [
+    {
+      "nome": "Isabela Correia Lima",
+      "url": "json/pesquisador/9.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/9.json"
+  ],
+  "url": "json/artigo/17.json",
+  "created": "2025-02-26T12:30:00.000Z"
+}

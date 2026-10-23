@@ -1,0 +1,53 @@
+{
+  "id": 3,
+  "nome": "Carolina Prado Nunes",
+  "titulacao": "Mestra",
+  "cargo": "Pesquisadora",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Segurança em IoT",
+    "Redes"
+  ],
+  "linhaPesquisa": "Superfície de ataque de dispositivos domésticos conectados",
+  "bio": "Mapeia o que dispositivos de consumo expõem na rede local quando ninguém está olhando. Mantém o laboratório de IoT do grupo.",
+  "email": "carolina.prado@unialfa.edu.br",
+  "fotoSeed": "carolina-prado-nunes",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=carolina-prado-nunes&backgroundColor=2C5282&radius=50",
+  "iniciais": "CN",
+  "cor": "#2C5282",
+  "ingresso": "2020-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 5,
+    "totalCitacoes": 103,
+    "indiceH": 4,
+    "comoAutorPrincipal": 3,
+    "primeiroAno": 2023,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Troca de chaves pós-quântica em dispositivos restritos: viabilidade prática",
+      "url": "json/artigo/4.json"
+    },
+    {
+      "titulo": "O que sua lâmpada conta sobre você: inferência de rotina a partir de tráfego doméstico",
+      "url": "json/artigo/5.json"
+    },
+    {
+      "titulo": "Autenticação padrão de fábrica em dispositivos de consumo: levantamento em 120 modelos",
+      "url": "json/artigo/6.json"
+    },
+    {
+      "titulo": "Limitação de requisições em ambientes serverless: o contador que não é compartilhado",
+      "url": "json/artigo/27.json"
+    },
+    {
+      "titulo": "Segmentação de rede doméstica como mitigação para dispositivos não confiáveis",
+      "url": "json/artigo/28.json"
+    }
+  ],
+  "url": "json/pesquisador/3.json",
+  "created": "2020-04-07T12:30:00.000Z"
+}

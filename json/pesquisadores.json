@@ -1,0 +1,603 @@
+[
+  {
+    "id": 1,
+    "nome": "Ana Clara Figueiredo",
+    "titulacao": "Doutora",
+    "cargo": "Professora Adjunta",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Segurança de Aplicações",
+      "DevSecOps"
+    ],
+    "linhaPesquisa": "Automação de controles de segurança em esteiras de entrega contínua",
+    "bio": "Pesquisa como mover verificação de segurança para dentro do fluxo de desenvolvimento sem transformar o pipeline em gargalo. Coordena o eixo de segurança de aplicações do GEPISEG desde 2021.",
+    "email": "ana.clara@unialfa.edu.br",
+    "fotoSeed": "ana-clara-figueiredo",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=ana-clara-figueiredo&backgroundColor=2F6F4E&radius=50",
+    "iniciais": "AF",
+    "cor": "#2F6F4E",
+    "ingresso": "2018-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 7,
+      "totalCitacoes": 189,
+      "indiceH": 5,
+      "comoAutorPrincipal": 5,
+      "primeiroAno": 2023,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Verificação de dependências em esteiras de entrega contínua: custo e cobertura",
+        "url": "json/artigo/1.json"
+      },
+      {
+        "titulo": "SSRF em arquiteturas de microsserviços: do acesso interno ao roubo de credencial",
+        "url": "json/artigo/2.json"
+      },
+      {
+        "titulo": "Escalonamento de privilégio por confusão de identidade em APIs REST",
+        "url": "json/artigo/8.json"
+      },
+      {
+        "titulo": "Falsos positivos em análise estática: medindo o custo de atenção da equipe",
+        "url": "json/artigo/19.json"
+      },
+      {
+        "titulo": "Segredos em repositório: detecção, rotação e o que fazer com o histórico",
+        "url": "json/artigo/25.json"
+      },
+      {
+        "titulo": "Modelagem de ameaça leve para equipes pequenas",
+        "url": "json/artigo/26.json"
+      },
+      {
+        "titulo": "Limitação de requisições em ambientes serverless: o contador que não é compartilhado",
+        "url": "json/artigo/27.json"
+      }
+    ],
+    "url": "json/pesquisador/1.json",
+    "created": "2018-06-12T12:30:00.000Z"
+  },
+  {
+    "id": 2,
+    "nome": "Bruno Tavares Lemos",
+    "titulacao": "Doutor",
+    "cargo": "Professor Associado",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Criptografia Aplicada",
+      "Protocolos Seguros"
+    ],
+    "linhaPesquisa": "Implementações de criptografia resistentes a canal lateral em dispositivos restritos",
+    "bio": "Trabalha com a distância entre a criptografia que se prova no papel e a que roda em hardware barato. Orienta o subgrupo de criptografia aplicada.",
+    "email": "bruno.tavares@unialfa.edu.br",
+    "fotoSeed": "bruno-tavares-lemos",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=bruno-tavares-lemos&backgroundColor=8C4A2F&radius=50",
+    "iniciais": "BL",
+    "cor": "#8C4A2F",
+    "ingresso": "2019-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 4,
+      "totalCitacoes": 121,
+      "indiceH": 4,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2024,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Implementações de AES em microcontroladores: análise de consumo e canal lateral",
+        "url": "json/artigo/3.json"
+      },
+      {
+        "titulo": "Troca de chaves pós-quântica em dispositivos restritos: viabilidade prática",
+        "url": "json/artigo/4.json"
+      },
+      {
+        "titulo": "Identificação de funções criptográficas em binários sem símbolos",
+        "url": "json/artigo/23.json"
+      },
+      {
+        "titulo": "Recuperação de chave a partir de despejo de memória em aplicações móveis",
+        "url": "json/artigo/30.json"
+      }
+    ],
+    "url": "json/pesquisador/2.json",
+    "created": "2019-11-23T12:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "nome": "Carolina Prado Nunes",
+    "titulacao": "Mestra",
+    "cargo": "Pesquisadora",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Segurança em IoT",
+      "Redes"
+    ],
+    "linhaPesquisa": "Superfície de ataque de dispositivos domésticos conectados",
+    "bio": "Mapeia o que dispositivos de consumo expõem na rede local quando ninguém está olhando. Mantém o laboratório de IoT do grupo.",
+    "email": "carolina.prado@unialfa.edu.br",
+    "fotoSeed": "carolina-prado-nunes",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=carolina-prado-nunes&backgroundColor=2C5282&radius=50",
+    "iniciais": "CN",
+    "cor": "#2C5282",
+    "ingresso": "2020-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 5,
+      "totalCitacoes": 103,
+      "indiceH": 4,
+      "comoAutorPrincipal": 3,
+      "primeiroAno": 2023,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Troca de chaves pós-quântica em dispositivos restritos: viabilidade prática",
+        "url": "json/artigo/4.json"
+      },
+      {
+        "titulo": "O que sua lâmpada conta sobre você: inferência de rotina a partir de tráfego doméstico",
+        "url": "json/artigo/5.json"
+      },
+      {
+        "titulo": "Autenticação padrão de fábrica em dispositivos de consumo: levantamento em 120 modelos",
+        "url": "json/artigo/6.json"
+      },
+      {
+        "titulo": "Limitação de requisições em ambientes serverless: o contador que não é compartilhado",
+        "url": "json/artigo/27.json"
+      },
+      {
+        "titulo": "Segmentação de rede doméstica como mitigação para dispositivos não confiáveis",
+        "url": "json/artigo/28.json"
+      }
+    ],
+    "url": "json/pesquisador/3.json",
+    "created": "2020-04-07T12:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "nome": "Diego Albuquerque Rosa",
+    "titulacao": "Mestre",
+    "cargo": "Pesquisador",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Teste de Intrusão",
+      "Red Team"
+    ],
+    "linhaPesquisa": "Metodologias de teste de intrusão em aplicações web corporativas",
+    "bio": "Atua na ponte entre a academia e a operação: traz de engajamentos reais os padrões de falha que viram objeto de estudo no grupo.",
+    "email": "diego.albuquerque@unialfa.edu.br",
+    "fotoSeed": "diego-albuquerque-rosa",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=diego-albuquerque-rosa&backgroundColor=6B4E9B&radius=50",
+    "iniciais": "DR",
+    "cor": "#6B4E9B",
+    "ingresso": "2021-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 3,
+      "totalCitacoes": 107,
+      "indiceH": 3,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2024,
+      "ultimoAno": 2025
+    },
+    "artigos": [
+      {
+        "titulo": "SSRF em arquiteturas de microsserviços: do acesso interno ao roubo de credencial",
+        "url": "json/artigo/2.json"
+      },
+      {
+        "titulo": "Padrões recorrentes de falha em testes de intrusão: análise de 60 engajamentos",
+        "url": "json/artigo/7.json"
+      },
+      {
+        "titulo": "Escalonamento de privilégio por confusão de identidade em APIs REST",
+        "url": "json/artigo/8.json"
+      }
+    ],
+    "url": "json/pesquisador/4.json",
+    "created": "2021-09-18T12:30:00.000Z"
+  },
+  {
+    "id": 5,
+    "nome": "Eduarda Mattos Vieira",
+    "titulacao": "Doutora",
+    "cargo": "Professora Adjunta",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Privacidade",
+      "LGPD",
+      "Governança"
+    ],
+    "linhaPesquisa": "Operacionalização de requisitos legais de privacidade em sistemas de informação",
+    "bio": "Pesquisa o que acontece quando uma exigência jurídica precisa virar coluna de banco e rotina de expurgo. Formação em Direito e em Computação.",
+    "email": "eduarda.mattos@unialfa.edu.br",
+    "fotoSeed": "eduarda-mattos-vieira",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=eduarda-mattos-vieira&backgroundColor=A6761D&radius=50",
+    "iniciais": "EV",
+    "cor": "#A6761D",
+    "ingresso": "2022-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 5,
+      "totalCitacoes": 156,
+      "indiceH": 5,
+      "comoAutorPrincipal": 3,
+      "primeiroAno": 2023,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "O que sua lâmpada conta sobre você: inferência de rotina a partir de tráfego doméstico",
+        "url": "json/artigo/5.json"
+      },
+      {
+        "titulo": "Direito ao esquecimento em sistemas com replicação: o apagamento que não apaga",
+        "url": "json/artigo/9.json"
+      },
+      {
+        "titulo": "Relatório de impacto à proteção de dados como artefato de engenharia",
+        "url": "json/artigo/10.json"
+      },
+      {
+        "titulo": "Modelagem de ameaça leve para equipes pequenas",
+        "url": "json/artigo/26.json"
+      },
+      {
+        "titulo": "Avaliação de maturidade em segurança: o que o número esconde",
+        "url": "json/artigo/29.json"
+      }
+    ],
+    "url": "json/pesquisador/5.json",
+    "created": "2022-02-02T12:30:00.000Z"
+  },
+  {
+    "id": 6,
+    "nome": "Felipe Nogueira Castro",
+    "titulacao": "Especialista",
+    "cargo": "Pesquisador Associado",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Resposta a Incidentes",
+      "SOC"
+    ],
+    "linhaPesquisa": "Detecção e resposta assistida por automação em centros de operação",
+    "bio": "Veio de sete anos de plantão em SOC. Estuda por que alertas corretos continuam sendo ignorados e o que a automação resolve de fato.",
+    "email": "felipe.nogueira@unialfa.edu.br",
+    "fotoSeed": "felipe-nogueira-castro",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=felipe-nogueira-castro&backgroundColor=1F6F72&radius=50",
+    "iniciais": "FC",
+    "cor": "#1F6F72",
+    "ingresso": "2023-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 4,
+      "totalCitacoes": 137,
+      "indiceH": 4,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2023,
+      "ultimoAno": 2025
+    },
+    "artigos": [
+      {
+        "titulo": "Tempo de permanência do atacante: medição em ambientes monitorados",
+        "url": "json/artigo/11.json"
+      },
+      {
+        "titulo": "Fadiga de alerta em centros de operação: causas e intervenções",
+        "url": "json/artigo/12.json"
+      },
+      {
+        "titulo": "Pretexto e autoridade: por que o pedido urgente funciona",
+        "url": "json/artigo/18.json"
+      },
+      {
+        "titulo": "Rotulagem de incidentes para treinamento supervisionado: o gargalo que ninguém publica",
+        "url": "json/artigo/22.json"
+      }
+    ],
+    "url": "json/pesquisador/6.json",
+    "created": "2023-07-13T12:30:00.000Z"
+  },
+  {
+    "id": 7,
+    "nome": "Gabriela Souza Andrade",
+    "titulacao": "Doutora",
+    "cargo": "Professora Titular",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Forense Digital",
+      "Perícia"
+    ],
+    "linhaPesquisa": "Cadeia de custódia e integridade de evidência em ambientes de nuvem",
+    "bio": "Perita com atuação em casos de fraude eletrônica. Pesquisa como preservar evidência em infraestrutura que não pertence a quem investiga.",
+    "email": "gabriela.souza@unialfa.edu.br",
+    "fotoSeed": "gabriela-souza-andrade",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=gabriela-souza-andrade&backgroundColor=9B3B5A&radius=50",
+    "iniciais": "GA",
+    "cor": "#9B3B5A",
+    "ingresso": "2024-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 3,
+      "totalCitacoes": 74,
+      "indiceH": 3,
+      "comoAutorPrincipal": 3,
+      "primeiroAno": 2024,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Cadeia de custódia em nuvem: preservação de evidência sem controle da infraestrutura",
+        "url": "json/artigo/13.json"
+      },
+      {
+        "titulo": "Artefatos voláteis em contêineres: o que sobra depois que o processo morre",
+        "url": "json/artigo/14.json"
+      },
+      {
+        "titulo": "Recuperação de chave a partir de despejo de memória em aplicações móveis",
+        "url": "json/artigo/30.json"
+      }
+    ],
+    "url": "json/pesquisador/7.json",
+    "created": "2024-12-24T12:30:00.000Z"
+  },
+  {
+    "id": 8,
+    "nome": "Henrique Barros Pacheco",
+    "titulacao": "Mestre",
+    "cargo": "Pesquisador",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Segurança em Nuvem",
+      "Infraestrutura"
+    ],
+    "linhaPesquisa": "Configuração indevida como vetor primário de incidente em provedores públicos",
+    "bio": "Estuda o incidente que não precisa de exploit: o bucket aberto, a chave vazada, a permissão larga demais que ninguém revisou.",
+    "email": "henrique.barros@unialfa.edu.br",
+    "fotoSeed": "henrique-barros-pacheco",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=henrique-barros-pacheco&backgroundColor=4A5568&radius=50",
+    "iniciais": "HP",
+    "cor": "#4A5568",
+    "ingresso": "2018-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 6,
+      "totalCitacoes": 147,
+      "indiceH": 6,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2024,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Padrões recorrentes de falha em testes de intrusão: análise de 60 engajamentos",
+        "url": "json/artigo/7.json"
+      },
+      {
+        "titulo": "Relatório de impacto à proteção de dados como artefato de engenharia",
+        "url": "json/artigo/10.json"
+      },
+      {
+        "titulo": "Artefatos voláteis em contêineres: o que sobra depois que o processo morre",
+        "url": "json/artigo/14.json"
+      },
+      {
+        "titulo": "Configuração indevida em provedores públicos: anatomia de 40 incidentes",
+        "url": "json/artigo/15.json"
+      },
+      {
+        "titulo": "Permissões de longa duração e o custo invisível da conveniência",
+        "url": "json/artigo/16.json"
+      },
+      {
+        "titulo": "Segredos em repositório: detecção, rotação e o que fazer com o histórico",
+        "url": "json/artigo/25.json"
+      }
+    ],
+    "url": "json/pesquisador/8.json",
+    "created": "2018-05-08T12:30:00.000Z"
+  },
+  {
+    "id": 9,
+    "nome": "Isabela Correia Lima",
+    "titulacao": "Mestra",
+    "cargo": "Pesquisadora",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Engenharia Social",
+      "Fator Humano"
+    ],
+    "linhaPesquisa": "Eficácia de programas de conscientização em segurança da informação",
+    "bio": "Pesquisa por que treinamento de phishing melhora o número do relatório e não melhora o comportamento. Formação em Psicologia e em Segurança.",
+    "email": "isabela.correia@unialfa.edu.br",
+    "fotoSeed": "isabela-correia-lima",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=isabela-correia-lima&backgroundColor=2F6F4E&radius=50",
+    "iniciais": "IL",
+    "cor": "#2F6F4E",
+    "ingresso": "2019-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 4,
+      "totalCitacoes": 140,
+      "indiceH": 4,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2023,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Fadiga de alerta em centros de operação: causas e intervenções",
+        "url": "json/artigo/12.json"
+      },
+      {
+        "titulo": "Simulações de phishing medem o quê? Uma crítica metodológica",
+        "url": "json/artigo/17.json"
+      },
+      {
+        "titulo": "Pretexto e autoridade: por que o pedido urgente funciona",
+        "url": "json/artigo/18.json"
+      },
+      {
+        "titulo": "Avaliação de maturidade em segurança: o que o número esconde",
+        "url": "json/artigo/29.json"
+      }
+    ],
+    "url": "json/pesquisador/9.json",
+    "created": "2019-10-19T12:30:00.000Z"
+  },
+  {
+    "id": 10,
+    "nome": "João Pedro Rezende",
+    "titulacao": "Graduando",
+    "cargo": "Bolsista de Iniciação Científica",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Segurança de Aplicações",
+      "Análise Estática"
+    ],
+    "linhaPesquisa": "Falsos positivos em ferramentas de análise estática de código",
+    "bio": "Bolsista desde 2024. Investiga o custo real de uma ferramenta que acusa muito e acerta pouco.",
+    "email": "joao.pedro@unialfa.edu.br",
+    "fotoSeed": "joao-pedro-rezende",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=joao-pedro-rezende&backgroundColor=8C4A2F&radius=50",
+    "iniciais": "JR",
+    "cor": "#8C4A2F",
+    "ingresso": "2020-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 3,
+      "totalCitacoes": 38,
+      "indiceH": 3,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2025,
+      "ultimoAno": 2026
+    },
+    "artigos": [
+      {
+        "titulo": "Verificação de dependências em esteiras de entrega contínua: custo e cobertura",
+        "url": "json/artigo/1.json"
+      },
+      {
+        "titulo": "Falsos positivos em análise estática: medindo o custo de atenção da equipe",
+        "url": "json/artigo/19.json"
+      },
+      {
+        "titulo": "Regras customizadas de análise estática derivadas de incidentes internos",
+        "url": "json/artigo/20.json"
+      }
+    ],
+    "url": "json/pesquisador/10.json",
+    "created": "2020-03-03T12:30:00.000Z"
+  },
+  {
+    "id": 11,
+    "nome": "Larissa Monteiro Dias",
+    "titulacao": "Doutora",
+    "cargo": "Professora Adjunta",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Aprendizado de Máquina",
+      "Detecção de Anomalias"
+    ],
+    "linhaPesquisa": "Modelos de detecção de anomalia em tráfego de rede corporativa",
+    "bio": "Trabalha com o problema mais chato da área: detector que funciona no conjunto de teste e desaba em produção.",
+    "email": "larissa.monteiro@unialfa.edu.br",
+    "fotoSeed": "larissa-monteiro-dias",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=larissa-monteiro-dias&backgroundColor=2C5282&radius=50",
+    "iniciais": "LD",
+    "cor": "#2C5282",
+    "ingresso": "2021-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 3,
+      "totalCitacoes": 82,
+      "indiceH": 3,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2024,
+      "ultimoAno": 2025
+    },
+    "artigos": [
+      {
+        "titulo": "Tempo de permanência do atacante: medição em ambientes monitorados",
+        "url": "json/artigo/11.json"
+      },
+      {
+        "titulo": "Detecção de anomalia em tráfego corporativo: por que o modelo desaba em produção",
+        "url": "json/artigo/21.json"
+      },
+      {
+        "titulo": "Rotulagem de incidentes para treinamento supervisionado: o gargalo que ninguém publica",
+        "url": "json/artigo/22.json"
+      }
+    ],
+    "url": "json/pesquisador/11.json",
+    "created": "2021-08-14T12:30:00.000Z"
+  },
+  {
+    "id": 12,
+    "nome": "Marcos Vinícius Ferraz",
+    "titulacao": "Doutor",
+    "cargo": "Professor Associado",
+    "instituicao": "UniAlfa",
+    "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+    "areas": [
+      "Segurança Ofensiva",
+      "Engenharia Reversa"
+    ],
+    "linhaPesquisa": "Análise de binários e identificação de vulnerabilidades em software proprietário",
+    "bio": "Pesquisa o que dá para descobrir sobre um programa sem ter o código dele. Coordena o laboratório de engenharia reversa.",
+    "email": "marcos.vinicius@unialfa.edu.br",
+    "fotoSeed": "marcos-vinicius-ferraz",
+    "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=marcos-vinicius-ferraz&backgroundColor=6B4E9B&radius=50",
+    "iniciais": "MF",
+    "cor": "#6B4E9B",
+    "ingresso": "2022-03-01",
+    "ativo": true,
+    "metricas": {
+      "totalArtigos": 4,
+      "totalCitacoes": 137,
+      "indiceH": 4,
+      "comoAutorPrincipal": 2,
+      "primeiroAno": 2023,
+      "ultimoAno": 2025
+    },
+    "artigos": [
+      {
+        "titulo": "Permissões de longa duração e o custo invisível da conveniência",
+        "url": "json/artigo/16.json"
+      },
+      {
+        "titulo": "Identificação de funções criptográficas em binários sem símbolos",
+        "url": "json/artigo/23.json"
+      },
+      {
+        "titulo": "Ofuscação e seu efeito prático sobre o tempo de análise",
+        "url": "json/artigo/24.json"
+      },
+      {
+        "titulo": "Segmentação de rede doméstica como mitigação para dispositivos não confiáveis",
+        "url": "json/artigo/28.json"
+      }
+    ],
+    "url": "json/pesquisador/12.json",
+    "created": "2022-01-25T12:30:00.000Z"
+  }
+]

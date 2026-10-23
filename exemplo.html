@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEPISEG — exemplo</title>
+  <style>
+    /* O CSS aqui é simples de propósito. A aparência é com vocês. */
+    body {
+      font-family: system-ui, sans-serif;
+      background: #f5f6f8;
+      color: #16202b;
+      margin: 0;
+      padding: 24px;
+    }
+    .limite { max-width: 900px; margin: 0 auto; }
+    h1 { margin-bottom: 4px; }
+    .controles { margin-bottom: 20px; }
+    input, select, button {
+      padding: 8px 10px;
+      border: 1px solid #ccd3db;
+      border-radius: 4px;
+      font: inherit;
+      background: #fff;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #e0e5ec;
+      border-radius: 6px;
+      padding: 14px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .capa {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 4px;
+      flex: none;
+    }
+    .card h2 { font-size: 16px; margin: 0 0 6px; }
+    .card p { margin: 4px 0; font-size: 14px; color: #5a6775; }
+    .avatar {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      vertical-align: middle;
+      object-fit: cover;
+    }
+    #detalhe {
+      background: #fff;
+      border: 1px solid #ccd3db;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    #detalhe pre { white-space: pre-wrap; font: inherit; color: #44515f; }
+  </style>
+</head>
+<body>
+<div class="limite">
+
+  <h1>Artigos do GEPISEG</h1>
+  <p id="totais"></p>
+
+  <div class="controles">
+    <input id="busca" type="search" placeholder="Buscar…">
+    <select id="ano"><option value="">Todos os anos</option></select>
+    <button id="buscar">Buscar</button>
+  </div>
+
+  <div id="detalhe" style="display:none"></div>
+
+  <div id="lista"></div>
+
+  <div>
+    <button id="anterior">← anterior</button>
+    <span id="pagina"></span>
+    <button id="proxima">próxima →</button>
+  </div>
+
+</div>
+
+<script src="js/dados.js"></script>
+<script src="js/gepiseg-api.js"></script>
+<script>
+  const api = GepisegAPI.criar();
+
+  // Guarda em que página estamos.
+  let pagina = 1;
+
+  // ---------------------------------------------------------------
+  // 1. Mostrar a lista de artigos
+  // ---------------------------------------------------------------
+  async function mostrarLista() {
+    const lista = document.getElementById('lista');
+    lista.innerHTML = 'carregando…';
+
+    // Monta os filtros a partir do que está escrito na tela.
+    const filtros = {
+      q: document.getElementById('busca').value,
+      ano: document.getElementById('ano').value,
+      pagina: pagina,
+      porPagina: 5
+    };
+
+    try {
+      const r = await api.artigos.listar(filtros);
+      let html = '';
+
+      for (const artigo of r.results) {
+        // Pega só os nomes dos autores e junta com vírgula.
+        const nomes = artigo.autores.map(function (a) { return a.nome; }).join(', ');
+
+        html += '<div class="card" onclick="mostrarDetalhe(' + artigo.id + ')">' +
+                  '<img class="capa" src="' + artigo.imagem + '" alt="">' +
+                  '<div>' +
+                    '<h2>' + artigo.titulo + '</h2>' +
+                    '<p>' + nomes + '</p>' +
+                    '<p>' + artigo.ano + ' · ' + artigo.citacoes + ' citações</p>' +
+                  '</div>' +
+                '</div>';
+      }
+
+      lista.innerHTML = html;
+      document.getElementById('pagina').textContent =
+        'página ' + pagina + ' de ' + r.info.pages;
+
+    } catch (erro) {
+      // Quando nada é encontrado, a API dá erro em vez de lista vazia.
+      lista.innerHTML = 'Nenhum artigo encontrado.';
+      document.getElementById('pagina').textContent = '';
+    }
+  }
+
+  // ---------------------------------------------------------------
+  // 2. Mostrar o detalhe de um artigo
+  // ---------------------------------------------------------------
+  async function mostrarDetalhe(id) {
+    const caixa = document.getElementById('detalhe');
+    caixa.style.display = 'block';
+    caixa.innerHTML = 'carregando…';
+
+    // porId devolve o artigo direto, sem .results
+    const artigo = await api.artigos.porId(id);
+
+    // Os autores vêm só com nome e link. Seguimos o link para ter a pessoa
+    // inteira: bio, titulação, métricas.
+    const pessoas = await api.seguir(artigo.pesquisadores);
+
+    let autores = '';
+    for (const p of pessoas) {
+      // A foto vem de um serviço externo e carrega de verdade. Ainda assim o
+      // onerror está aqui: se a internet cair ou o serviço sair do ar, a tela
+      // mostra as iniciais em vez de um ícone quebrado. Sempre tenha plano B.
+      const foto = '<img src="' + p.imagem + '" alt="' + p.nome + '" class="avatar"' +
+        ' onerror="this.outerHTML = \'<span class=&quot;avatar&quot; style=&quot;background:' +
+        p.cor + '&quot;>' + p.iniciais + '</span>\'">';
+
+      autores += '<p>' + foto + ' ' +
+        p.nome + ' — ' + p.titulacao + ', ' + p.metricas.totalArtigos + ' artigos' +
+      '</p>';
+    }
+
+    caixa.innerHTML =
+      '<h2>' + artigo.titulo + '</h2>' +
+      '<p>' + artigo.veiculo + ' · ' + artigo.dataLancamento + ' · p. ' + artigo.paginas + '</p>' +
+      autores +
+      '<pre>' + artigo.conteudo + '</pre>' +
+      '<button onclick="document.getElementById(\'detalhe\').style.display=\'none\'">fechar</button>';
+
+    window.scrollTo(0, 0);
+  }
+
+  // ---------------------------------------------------------------
+  // 3. Preencher o select de anos e os totais
+  // ---------------------------------------------------------------
+  async function prepararTela() {
+    const f = await api.filtros();
+    const select = document.getElementById('ano');
+
+    for (const ano of f.anos) {
+      select.innerHTML += '<option value="' + ano + '">' + ano + '</option>';
+    }
+
+    const artigos = await api.artigos.listar({ porPagina: 1 });
+    const pessoas = await api.pesquisadores.listar({ porPagina: 1 });
+
+    document.getElementById('totais').textContent =
+      pessoas.info.count + ' pesquisadores · ' + artigos.info.count + ' artigos';
+  }
+
+  // ---------------------------------------------------------------
+  // 4. Ligar os botões
+  // ---------------------------------------------------------------
+  document.getElementById('buscar').onclick = function () {
+    pagina = 1;          // mudou a busca, volta para a primeira página
+    mostrarLista();
+  };
+
+  document.getElementById('anterior').onclick = function () {
+    if (pagina > 1) {
+      pagina = pagina - 1;
+      mostrarLista();
+    }
+  };
+
+  document.getElementById('proxima').onclick = function () {
+    pagina = pagina + 1;
+    mostrarLista();
+  };
+
+  prepararTela();
+  mostrarLista();
+</script>
+</body>
+</html>

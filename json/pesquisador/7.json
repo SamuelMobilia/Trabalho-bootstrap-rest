@@ -1,0 +1,45 @@
+{
+  "id": 7,
+  "nome": "Gabriela Souza Andrade",
+  "titulacao": "Doutora",
+  "cargo": "Professora Titular",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Forense Digital",
+    "Perícia"
+  ],
+  "linhaPesquisa": "Cadeia de custódia e integridade de evidência em ambientes de nuvem",
+  "bio": "Perita com atuação em casos de fraude eletrônica. Pesquisa como preservar evidência em infraestrutura que não pertence a quem investiga.",
+  "email": "gabriela.souza@unialfa.edu.br",
+  "fotoSeed": "gabriela-souza-andrade",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=gabriela-souza-andrade&backgroundColor=9B3B5A&radius=50",
+  "iniciais": "GA",
+  "cor": "#9B3B5A",
+  "ingresso": "2024-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 3,
+    "totalCitacoes": 74,
+    "indiceH": 3,
+    "comoAutorPrincipal": 3,
+    "primeiroAno": 2024,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Cadeia de custódia em nuvem: preservação de evidência sem controle da infraestrutura",
+      "url": "json/artigo/13.json"
+    },
+    {
+      "titulo": "Artefatos voláteis em contêineres: o que sobra depois que o processo morre",
+      "url": "json/artigo/14.json"
+    },
+    {
+      "titulo": "Recuperação de chave a partir de despejo de memória em aplicações móveis",
+      "url": "json/artigo/30.json"
+    }
+  ],
+  "url": "json/pesquisador/7.json",
+  "created": "2024-12-24T12:30:00.000Z"
+}

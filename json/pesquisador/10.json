@@ -1,0 +1,45 @@
+{
+  "id": 10,
+  "nome": "João Pedro Rezende",
+  "titulacao": "Graduando",
+  "cargo": "Bolsista de Iniciação Científica",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Segurança de Aplicações",
+    "Análise Estática"
+  ],
+  "linhaPesquisa": "Falsos positivos em ferramentas de análise estática de código",
+  "bio": "Bolsista desde 2024. Investiga o custo real de uma ferramenta que acusa muito e acerta pouco.",
+  "email": "joao.pedro@unialfa.edu.br",
+  "fotoSeed": "joao-pedro-rezende",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=joao-pedro-rezende&backgroundColor=8C4A2F&radius=50",
+  "iniciais": "JR",
+  "cor": "#8C4A2F",
+  "ingresso": "2020-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 3,
+    "totalCitacoes": 38,
+    "indiceH": 3,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2025,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Verificação de dependências em esteiras de entrega contínua: custo e cobertura",
+      "url": "json/artigo/1.json"
+    },
+    {
+      "titulo": "Falsos positivos em análise estática: medindo o custo de atenção da equipe",
+      "url": "json/artigo/19.json"
+    },
+    {
+      "titulo": "Regras customizadas de análise estática derivadas de incidentes internos",
+      "url": "json/artigo/20.json"
+    }
+  ],
+  "url": "json/pesquisador/10.json",
+  "created": "2020-03-03T12:30:00.000Z"
+}

@@ -1,0 +1,57 @@
+{
+  "id": 8,
+  "nome": "Henrique Barros Pacheco",
+  "titulacao": "Mestre",
+  "cargo": "Pesquisador",
+  "instituicao": "UniAlfa",
+  "unidade": "Grupo de Estudo e Pesquisa em Segurança da Informação (GEPISEG)",
+  "areas": [
+    "Segurança em Nuvem",
+    "Infraestrutura"
+  ],
+  "linhaPesquisa": "Configuração indevida como vetor primário de incidente em provedores públicos",
+  "bio": "Estuda o incidente que não precisa de exploit: o bucket aberto, a chave vazada, a permissão larga demais que ninguém revisou.",
+  "email": "henrique.barros@unialfa.edu.br",
+  "fotoSeed": "henrique-barros-pacheco",
+  "imagem": "https://api.dicebear.com/9.x/notionists/svg?seed=henrique-barros-pacheco&backgroundColor=4A5568&radius=50",
+  "iniciais": "HP",
+  "cor": "#4A5568",
+  "ingresso": "2018-03-01",
+  "ativo": true,
+  "metricas": {
+    "totalArtigos": 6,
+    "totalCitacoes": 147,
+    "indiceH": 6,
+    "comoAutorPrincipal": 2,
+    "primeiroAno": 2024,
+    "ultimoAno": 2026
+  },
+  "artigos": [
+    {
+      "titulo": "Padrões recorrentes de falha em testes de intrusão: análise de 60 engajamentos",
+      "url": "json/artigo/7.json"
+    },
+    {
+      "titulo": "Relatório de impacto à proteção de dados como artefato de engenharia",
+      "url": "json/artigo/10.json"
+    },
+    {
+      "titulo": "Artefatos voláteis em contêineres: o que sobra depois que o processo morre",
+      "url": "json/artigo/14.json"
+    },
+    {
+      "titulo": "Configuração indevida em provedores públicos: anatomia de 40 incidentes",
+      "url": "json/artigo/15.json"
+    },
+    {
+      "titulo": "Permissões de longa duração e o custo invisível da conveniência",
+      "url": "json/artigo/16.json"
+    },
+    {
+      "titulo": "Segredos em repositório: detecção, rotação e o que fazer com o histórico",
+      "url": "json/artigo/25.json"
+    }
+  ],
+  "url": "json/pesquisador/8.json",
+  "created": "2018-05-08T12:30:00.000Z"
+}

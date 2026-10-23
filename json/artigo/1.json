@@ -1,0 +1,48 @@
+{
+  "id": 1,
+  "titulo": "Verificação de dependências em esteiras de entrega contínua: custo e cobertura",
+  "resumo": "Avaliamos o impacto de inserir verificação de dependências em quatro esteiras de entrega contínua reais, medindo tempo adicionado por execução e proporção de alertas acionáveis. O ganho de cobertura concentra-se nas primeiras verificações, enquanto o custo de tempo cresce de forma linear.",
+  "conteudo": "## Resumo\nAvaliamos o impacto de inserir verificação de dependências em quatro esteiras de entrega contínua reais, medindo tempo adicionado por execução e proporção de alertas acionáveis. O ganho de cobertura concentra-se nas primeiras verificações, enquanto o custo de tempo cresce de forma linear.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em DevSecOps do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Ana Clara Figueiredo, João Pedro Rezende entre 2024 e 2025. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_evento",
+  "assunto": "Segurança da Informação",
+  "tema": "DevSecOps",
+  "palavrasChave": [
+    "DevSecOps",
+    "cadeia de suprimentos",
+    "dependências",
+    "CI/CD"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2025-08-14",
+  "ano": 2025,
+  "veiculo": "Simpósio Brasileiro em Segurança da Informação e de Sistemas Computacionais",
+  "paginas": "11-22",
+  "citacoes": 23,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-devsecops-1",
+  "imagem": "https://picsum.photos/seed/gepiseg-devsecops-1/640/360",
+  "capa": {
+    "cor": "#6B4E9B",
+    "iniciais": "DE"
+  },
+  "autorPrincipal": {
+    "nome": "Ana Clara Figueiredo",
+    "url": "json/pesquisador/1.json"
+  },
+  "autores": [
+    {
+      "nome": "Ana Clara Figueiredo",
+      "url": "json/pesquisador/1.json"
+    },
+    {
+      "nome": "João Pedro Rezende",
+      "url": "json/pesquisador/10.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/1.json",
+    "json/pesquisador/10.json"
+  ],
+  "url": "json/artigo/1.json",
+  "created": "2025-06-12T12:30:00.000Z"
+}

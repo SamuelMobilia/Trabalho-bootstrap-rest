@@ -1,0 +1,48 @@
+{
+  "id": 28,
+  "titulo": "Segmentação de rede doméstica como mitigação para dispositivos não confiáveis",
+  "resumo": "Avaliamos a eficácia da segmentação de rede doméstica contra movimentação lateral a partir de dispositivos comprometidos. A mitigação é efetiva, mas a complexidade de configuração a torna inacessível ao usuário típico.",
+  "conteudo": "## Resumo\nAvaliamos a eficácia da segmentação de rede doméstica contra movimentação lateral a partir de dispositivos comprometidos. A mitigação é efetiva, mas a complexidade de configuração a torna inacessível ao usuário típico.\n\n## Introdução\nEste trabalho integra a linha de pesquisa em Segurança em IoT do GEPISEG. A investigação partiu de uma lacuna observada na prática: resultados publicados nesta frente raramente reportam o custo de adoção, o que dificulta a decisão de quem precisa aplicá-los.\n\n## Metodologia\nA coleta foi conduzida por Carolina Prado Nunes, Marcos Vinícius Ferraz entre 2022 e 2023. Os dados foram tratados de modo a permitir replicação, e os limites do procedimento estão declarados junto aos resultados em vez de omitidos.\n\n## Resultados e discussão\nOs achados reforçam que, nesta frente, o fator limitante costuma ser operacional e não técnico. As tabelas e o tratamento estatístico completo acompanham a publicação no veículo de origem.\n\n## Considerações finais\nO trabalho abre continuidade em duas direções: ampliar a amostra e avaliar a persistência do efeito ao longo do tempo.",
+  "tipo": "artigo_periodico",
+  "assunto": "Segurança da Informação",
+  "tema": "Segurança em IoT",
+  "palavrasChave": [
+    "IoT",
+    "segmentação",
+    "rede",
+    "mitigação"
+  ],
+  "idioma": "pt-BR",
+  "dataLancamento": "2023-05-14",
+  "ano": 2023,
+  "veiculo": "Revista Brasileira de Segurança Computacional",
+  "paginas": "200-211",
+  "citacoes": 40,
+  "status": "publicado",
+  "fotoSeed": "gepiseg-seguranca-em-iot-28",
+  "imagem": "https://picsum.photos/seed/gepiseg-seguranca-em-iot-28/640/360",
+  "capa": {
+    "cor": "#9B3B5A",
+    "iniciais": "SE"
+  },
+  "autorPrincipal": {
+    "nome": "Carolina Prado Nunes",
+    "url": "json/pesquisador/3.json"
+  },
+  "autores": [
+    {
+      "nome": "Carolina Prado Nunes",
+      "url": "json/pesquisador/3.json"
+    },
+    {
+      "nome": "Marcos Vinícius Ferraz",
+      "url": "json/pesquisador/12.json"
+    }
+  ],
+  "pesquisadores": [
+    "json/pesquisador/3.json",
+    "json/pesquisador/12.json"
+  ],
+  "url": "json/artigo/28.json",
+  "created": "2023-09-12T12:30:00.000Z"
+}
