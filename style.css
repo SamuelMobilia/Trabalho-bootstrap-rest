@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.design-nav {
+    border-bottom: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #0F4C5C !important;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.329);
+}
+
+.nav-link {
+color: #8eb4ca !important;
+}
+
+.navbar-brand {
+    color: #bac8cf;
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 100%;
+}
+
+.btn {
+    background-color: #a9c3d2 !important;
+    color: rgb(29, 58, 79);
+}
+
+.btn:hover {
+    background-color: rgb(29, 58, 79) !important;
+    color: #a9c3d2;
+}
+
+.btn-outline-success {
+    border: none;
+}
