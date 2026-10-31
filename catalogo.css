@@ -1,6 +1,15 @@
 main {
-    height: 100vh;
-    width: 100vw;
+    height: fit-content;
+    width: fit-content;
+    background-color: #dfe6ec;
+}
+
+.nav-link.active {
+    color: #8eb4ca !important;
+}
+
+.nav-link {
+    color: #fff !important;
 }
 
 .col {
@@ -21,6 +30,7 @@ main {
     height: 423px;
     box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.15);
     transition: 0.3s ease;
+    background-color: #f5f8fa;
 }
 
 .card:hover {
@@ -33,4 +43,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card-title {
+    color: #0F4C5C;
+}
+
+.card-text2 {
+    color: rgb(108, 117, 125);
 }
