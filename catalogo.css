@@ -1,0 +1,36 @@
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+.col {
+    margin: 20px;
+    max-width: 300px;
+}
+
+.listaArtigos {
+    display: flex;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 423px;
+    box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 4px rgb(214, 143, 16, 0.5);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
