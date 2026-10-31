@@ -1,0 +1,118 @@
+:root {
+    --principal: #0F4C5C;
+    --apoio: #a9c3d2;
+    --fundo: #f5f8fa;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: #2b3a42;
+}
+
+.design-main {
+    background-color: #dfe6ec;
+}
+
+h2 {
+    color: var(--principal);
+    font-weight: 700;
+}
+
+.img-sobre {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.design-nav {
+    border-bottom: none;
+    color: var(--principal);
+    background-color: var(--principal) !important;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+.nav-link {
+    color: #8eb4ca !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+}
+
+.navbar-brand {
+    color: #bac8cf;
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 100%;
+}
+
+.btn {
+    background-color: var(--apoio) !important;
+    color: rgb(29, 58, 79);
+}
+
+.btn:hover {
+    background-color: rgb(29, 58, 79) !important;
+    color: var(--apoio);
+}
+
+.btn-outline-success {
+    border: none;
+}
+
+/* Hero */
+.design-hero {
+    background-color: var(--principal);
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.design-hero .badge {
+    background-color: var(--apoio);
+    color: var(--principal);
+    margin-bottom: 1rem;
+    padding: 0.5em 1em;
+}
+
+.design-hero .lead {
+    color: #cfe0e8;
+}
+
+/* Seções alternadas */
+.secao-clara {
+    background-color: var(--fundo);
+}
+
+/* Cards dos destaques */
+.card-artigo {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-artigo:hover {
+    transform: translateY(-4px);
+}
+
+.card-artigo .tema {
+    color: var(--principal);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: var(--principal);
+    color: #cfe0e8;
+    padding: 1.5rem 0;
+}
