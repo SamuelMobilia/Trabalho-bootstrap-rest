@@ -28,9 +28,9 @@
           <a class="nav-link" href="catalogo.html">Catálogo</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <form id="formBusca" class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Pesquisar artigos" aria-label="Search"/>
-        <button class="btn btn-outline-success" onclick="" type="submit">Pesquisar</button>
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
       </form>
     </div>
   </div>
@@ -51,12 +51,21 @@
 <script>
 
   const api = GepisegAPI.criar();
+  const formBusca = document.querySelector('#formBusca');
+
+  formBusca.addEventListener('submit', event => {
+    event.preventDefault();
+    mostrarTodosArtigos();
+  });
 
   async function mostrarTodosArtigos() {
     const lista = document.querySelector(".row")
+    const getFiltro = document.querySelector(".form-control")
+    let filtro = getFiltro.value.trim()
+    console.log(filtro)
 
     try {
-      const r = await api.artigos.listar({ordenar: "citacoes", porPagina: 12})
+      const r = await api.artigos.listar({q: filtro, ordenar: "citacoes", porPagina: 12})
       let html = '';
 
       r.results.forEach(artigo => {
