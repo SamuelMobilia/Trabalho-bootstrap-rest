@@ -1,64 +1,63 @@
-main {
-    height: fit-content;
-    width: 100%;
-    background-color: #dfe6ec;
+/* Base visual (paleta, navbar, hero, card-artigo, rodapé) vem de index.css */
+
+/* Cabeçalho da página */
+.design-hero.hero-compacto {
+    padding: 3.5rem 0;
 }
 
-.nav-link.active {
-    color: #8eb4ca !important;
+/* Cards do catálogo */
+.card-artigo {
+    overflow: hidden;
+    cursor: pointer; /* o card inteiro abre o offcanvas de detalhes */
 }
 
-.nav-link {
-    color: #fff !important;
+.card-artigo .card-img-top {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
-.col {
-    margin: 20px;
-    max-width: 300px;
-}
-
-.listaArtigos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0;
-}
-
-.card {
-    height: 423px;
-    box-shadow: 0px 0px 12px 4px rgb(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    background-color: #f5f8fa;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-    box-shadow: 0px 0px 12px 4px rgb(214, 143, 16, 0.5);
-}
-
-.card-body {
+.card-artigo .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.card-title {
-    color: #0F4C5C;
+.card-artigo .card-title {
+    color: var(--principal);
+    font-weight: 700;
 }
 
-.card-text2 {
-    color: rgb(108, 117, 125);
+/* Limita a 2 linhas pra os cards da mesma fileira ficarem alinhados */
+.card-artigo .autores {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
+/* Empurra "ano · citações" pro pé do card */
+.card-artigo .meta {
+    margin-top: auto;
+}
+
+/* Paginação e dropdown na paleta do site */
+.pagination {
+    --bs-pagination-color: var(--principal);
+    --bs-pagination-hover-color: var(--principal);
+    --bs-pagination-hover-bg: var(--apoio);
+    --bs-pagination-focus-color: var(--principal);
+    --bs-pagination-focus-bg: var(--apoio);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(15, 76, 92, 0.25);
+    --bs-pagination-active-bg: var(--principal);
+    --bs-pagination-active-border-color: var(--principal);
+    --bs-pagination-border-color: #c5d3dc;
+    --bs-pagination-disabled-color: #8a9aa3;
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: var(--principal);
+}
+
+/* Offcanvas de detalhes do artigo */
 .offcanvas-full {
   height: 100vh !important;
   max-height: 100vh !important;

@@ -10,8 +10,31 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 6px; 
+  height: 6px;
+}
+
+/* Fundo (trilha) da barra */
+::-webkit-scrollbar-track {
+  background: solid; 
+  background-color: var(--principal);
+}
+
+/* O "puxador" (parte que se move) */
+::-webkit-scrollbar-thumb {
+  background: #d58d0f;;
+  border-radius: 10px;
+}
+
+/* Efeito ao passar o mouse por cima do puxador */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 body {
     color: #2b3a42;
+    -webkit-overflow-scrolling: ;
 }
 
 .design-main {
@@ -36,7 +59,7 @@ h2 {
 }
 
 .design-nav {
-    border-bottom: none;
+    border-bottom: solid #d58d0f;
     color: var(--principal);
     background-color: var(--principal) !important;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);

@@ -22,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+          <a class="nav-link" href="index.html">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="catalogo.html">Catálogo</a>
+          <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
         </li>
       </ul>
       <form id="formBusca" class="d-flex" role="search">
@@ -36,12 +36,37 @@
   </div>
 </nav>
 
-<main>
-<div class="listaArtigos">
-  <div class="row">
+<main class="design-main">
+  <section class="design-hero hero-compacto">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bold">Catálogo de artigos</h1>
+      <p class="lead mb-0">Toda a produção científica do GEPISEG em um só lugar.</p>
+    </div>
+  </section>
 
-  </div>
-</div>
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+        <p id="contagem" class="text-secondary mb-0"></p>
+        <div class="dropdown">
+          <button id="btnItens" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Exibir: 8
+          </button>
+          <ul id="menuItens" class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item active" href="#" data-itens="8">8</a></li>
+            <li><a class="dropdown-item" href="#" data-itens="16">16</a></li>
+            <li><a class="dropdown-item" href="#" data-itens="24">24</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="gradeArtigos" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4"></div>
+
+      <nav aria-label="Paginação de artigos" class="mt-5">
+        <ul id="paginacao" class="pagination justify-content-center mb-0"></ul>
+      </nav>
+    </div>
+  </section>
 </main>
 
 <div class="offcanvas offcanvas-top offcanvas-full" tabindex="-1" id="offcanvasArtigo" aria-labelledby="offcanvasArtigoLabel">
@@ -62,42 +87,111 @@
 
   const api = GepisegAPI.criar();
   const formBusca = document.querySelector('#formBusca');
+  let paginaAtual = 1
+  let itensPorPagina = 8
+  let termoBusca = ""
 
   formBusca.addEventListener('submit', event => {
     event.preventDefault();
+    termoBusca = formBusca.querySelector('input').value.trim()
+    paginaAtual = 1
     mostrarTodosArtigos();
   });
 
+  const paginacao = document.querySelector('#paginacao')
+  const contagem = document.querySelector('#contagem')
+  const btnItens = document.querySelector('#btnItens')
+  const menuItens = document.querySelector('#menuItens')
+
+  menuItens.addEventListener('click', event => {
+    event.preventDefault();
+    const item = event.target.closest('[data-itens]')
+    if (!item) return
+
+    itensPorPagina = Number(item.dataset.itens)
+    paginaAtual = 1
+    btnItens.textContent = `Exibir: ${itensPorPagina}`
+    menuItens.querySelectorAll('.dropdown-item').forEach(i => i.classList.toggle('active', i === item))
+    mostrarTodosArtigos();
+  });
+
+  paginacao.addEventListener('click', event => {
+    event.preventDefault();
+    const link = event.target.closest('[data-pagina]')
+    if (!link || link.parentElement.classList.contains('disabled')) return
+
+    paginaAtual = Number(link.dataset.pagina)
+    mostrarTodosArtigos();
+  });
+
+  function desenharPaginacao(totalPaginas) {
+    if (totalPaginas <= 1) {
+      paginacao.innerHTML = ''
+      return
+    }
+
+    const primeira = paginaAtual === 1
+    const ultima = paginaAtual === totalPaginas
+
+    let html = `
+      <li class="page-item ${primeira ? 'disabled' : ''}">
+        <a class="page-link" href="#" data-pagina="${paginaAtual - 1}" ${primeira ? 'aria-disabled="true" tabindex="-1"' : ''}>Anterior</a>
+      </li>
+    `
+
+    for (let i = 1; i <= totalPaginas; i++) {
+      const atual = i === paginaAtual
+      html += `
+      <li class="page-item ${atual ? 'active' : ''}">
+        <a class="page-link" href="#" data-pagina="${i}" ${atual ? 'aria-current="page"' : ''}>${i}</a>
+      </li>
+      `
+    }
+
+    html += `
+      <li class="page-item ${ultima ? 'disabled' : ''}">
+        <a class="page-link" href="#" data-pagina="${paginaAtual + 1}" ${ultima ? 'aria-disabled="true" tabindex="-1"' : ''}>Próximo</a>
+      </li>
+    `
+
+    paginacao.innerHTML = html
+  }
+
   async function mostrarTodosArtigos() {
-    const lista = document.querySelector(".row")
-    const getFiltro = document.querySelector(".form-control")
-    let filtro = getFiltro.value.trim()
-    console.log(filtro)
+    const lista = document.querySelector("#gradeArtigos")
 
     try {
-      const r = await api.artigos.listar({q: filtro, ordenar: "citacoes", porPagina: 12})
+      const r = await api.artigos.listar({q: termoBusca, ordenar: "citacoes", porPagina: itensPorPagina, pagina: paginaAtual})
       let html = '';
 
       r.results.forEach(artigo => {
         const nomes = artigo.autores.map(function (a) { return a.nome; }).join(', ');
         html += `
         <div class="col">
-        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasArtigo" aria-controls="offcanvasArtigo" onclick="mostrarDetalhe(${artigo.id})" class="card" style="width: 18rem;">
-        <img src="${artigo.imagem}" class="card-img-top" alt="${artigo.nome}">
-          <div class="card-body">
-            <h5 class="card-title"><strong>${artigo.titulo}</strong></h5>
-            <p class="card-text">${nomes}</p>
-            <p class="card-text2">${artigo.ano} · ${artigo.citacoes} citações</p>
+          <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasArtigo" aria-controls="offcanvasArtigo" onclick="mostrarDetalhe(${artigo.id})" class="card card-artigo h-100">
+            <img src="${artigo.imagem}" class="card-img-top" alt="${artigo.titulo}" loading="lazy">
+            <div class="card-body">
+              <p class="tema mb-2">${artigo.tema}</p>
+              <h5 class="card-title">${artigo.titulo}</h5>
+              <p class="card-text text-secondary autores">${nomes}</p>
+              <p class="card-text text-secondary meta">${artigo.ano} &middot; ${artigo.citacoes} citações</p>
+            </div>
           </div>
-        </div>
         </div>
         `
       });
 
       lista.innerHTML = html;
+      desenharPaginacao(r.info.pages)
+
+      const primeiro = (paginaAtual - 1) * itensPorPagina + 1
+      const ultimo = Math.min(paginaAtual * itensPorPagina, r.info.count)
+      contagem.textContent = `Mostrando ${primeiro}–${ultimo} de ${r.info.count} artigos`
 
     } catch (erro) {
-      lista.innerHTML = "Nenhum artigo encontrado.";
+      lista.innerHTML = '<p class="w-100 text-center text-secondary py-5">Nenhum artigo encontrado.</p>';
+      paginacao.innerHTML = ''
+      contagem.textContent = ''
     }
 
   }
