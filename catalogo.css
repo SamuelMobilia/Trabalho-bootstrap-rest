@@ -10,11 +10,11 @@ main {
 }
 
 .nav-link.active {
-    color: #8eb4ca !important;
+    color: #fff !important;
 }
 
 .nav-link {
-    color: #fff !important;
+    color: #8eb4ca !important;
 }
 
 .col {
