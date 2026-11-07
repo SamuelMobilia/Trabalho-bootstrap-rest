@@ -4,6 +4,11 @@ main {
     background-color: #dfe6ec;
 }
 
+/* Cabeçalho da página (base do hero vem de index.css) */
+.design-hero.hero-compacto {
+    padding: 3.5rem 0;
+}
+
 .nav-link.active {
     color: #8eb4ca !important;
 }
