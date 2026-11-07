@@ -22,10 +22,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Início</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="catalogo.html">Catálogo</a>
+          <a class="nav-link" href="catalogo.html">Catálogo</a>
         </li>
       </ul>
       <form id="formBusca" class="d-flex" role="search">
@@ -36,37 +36,34 @@
   </div>
 </nav>
 
-<main class="design-main">
-  <section class="design-hero hero-compacto">
-    <div class="container text-center">
-      <h1 class="display-5 fw-bold">Catálogo de artigos</h1>
-      <p class="lead mb-0">Toda a produção científica do GEPISEG em um só lugar.</p>
+<main>
+<div class="container">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 pt-4">
+    <p id="contagem" class="text-secondary mb-0"></p>
+    <div class="dropdown">
+      <button id="btnItens" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Exibir: 8
+      </button>
+      <ul id="menuItens" class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item active" href="#" data-itens="8">8</a></li>
+        <li><a class="dropdown-item" href="#" data-itens="16">16</a></li>
+        <li><a class="dropdown-item" href="#" data-itens="24">24</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+</div>
 
-  <section class="py-5">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-        <p id="contagem" class="text-secondary mb-0"></p>
-        <div class="dropdown">
-          <button id="btnItens" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Exibir: 8
-          </button>
-          <ul id="menuItens" class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item active" href="#" data-itens="8">8</a></li>
-            <li><a class="dropdown-item" href="#" data-itens="16">16</a></li>
-            <li><a class="dropdown-item" href="#" data-itens="24">24</a></li>
-          </ul>
-        </div>
-      </div>
+<div class="listaArtigos">
+  <div class="row" id="gradeArtigos">
 
-      <div id="gradeArtigos" class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4"></div>
+  </div>
+</div>
 
-      <nav aria-label="Paginação de artigos" class="mt-5">
-        <ul id="paginacao" class="pagination justify-content-center mb-0"></ul>
-      </nav>
-    </div>
-  </section>
+<div class="container">
+  <nav aria-label="Paginação de artigos" class="py-4">
+    <ul id="paginacao" class="pagination justify-content-center mb-0"></ul>
+  </nav>
+</div>
 </main>
 
 <div class="offcanvas offcanvas-top offcanvas-full" tabindex="-1" id="offcanvasArtigo" aria-labelledby="offcanvasArtigoLabel">
@@ -168,15 +165,14 @@
         const nomes = artigo.autores.map(function (a) { return a.nome; }).join(', ');
         html += `
         <div class="col">
-          <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasArtigo" aria-controls="offcanvasArtigo" onclick="mostrarDetalhe(${artigo.id})" class="card card-artigo h-100">
-            <img src="${artigo.imagem}" class="card-img-top" alt="${artigo.titulo}" loading="lazy">
-            <div class="card-body">
-              <p class="tema mb-2">${artigo.tema}</p>
-              <h5 class="card-title">${artigo.titulo}</h5>
-              <p class="card-text text-secondary autores">${nomes}</p>
-              <p class="card-text text-secondary meta">${artigo.ano} &middot; ${artigo.citacoes} citações</p>
-            </div>
+        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasArtigo" aria-controls="offcanvasArtigo" onclick="mostrarDetalhe(${artigo.id})" class="card" style="width: 18rem;">
+        <img src="${artigo.imagem}" class="card-img-top" alt="${artigo.nome}">
+          <div class="card-body">
+            <h5 class="card-title"><strong>${artigo.titulo}</strong></h5>
+            <p class="card-text">${nomes}</p>
+            <p class="card-text2">${artigo.ano} · ${artigo.citacoes} citações</p>
           </div>
+        </div>
         </div>
         `
       });
@@ -189,7 +185,7 @@
       contagem.textContent = `Mostrando ${primeiro}–${ultimo} de ${r.info.count} artigos`
 
     } catch (erro) {
-      lista.innerHTML = '<p class="w-100 text-center text-secondary py-5">Nenhum artigo encontrado.</p>';
+      lista.innerHTML = "Nenhum artigo encontrado.";
       paginacao.innerHTML = ''
       contagem.textContent = ''
     }

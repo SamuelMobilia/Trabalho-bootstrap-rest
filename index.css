@@ -15,19 +15,16 @@
   height: 6px;
 }
 
-/* Fundo (trilha) da barra */
 ::-webkit-scrollbar-track {
   background: solid; 
   background-color: var(--principal);
 }
 
-/* O "puxador" (parte que se move) */
 ::-webkit-scrollbar-thumb {
   background: #d58d0f;;
   border-radius: 10px;
 }
 
-/* Efeito ao passar o mouse por cima do puxador */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -97,7 +94,6 @@ h2 {
     border: none;
 }
 
-/* Hero */
 .design-hero {
     background-color: var(--principal);
     color: #fff;
@@ -115,12 +111,10 @@ h2 {
     color: #cfe0e8;
 }
 
-/* Seções alternadas */
 .secao-clara {
     background-color: var(--fundo);
 }
 
-/* Cards dos destaques */
 .card-artigo {
     border: none;
     border-radius: 12px;
@@ -139,7 +133,6 @@ h2 {
     text-transform: uppercase;
 }
 
-/* Rodapé */
 .rodape {
     background-color: var(--principal);
     color: #cfe0e8;

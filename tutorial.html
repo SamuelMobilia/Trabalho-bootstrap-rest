@@ -38,8 +38,6 @@
     border-top: 0;
   }
 
-  /* ---------- capa ---------- */
-
   header {
     max-width: 780px;
     margin: 0 auto;
@@ -56,8 +54,6 @@
   }
   header h1 { margin: 10px 0 8px; font-size: 32px; line-height: 1.2; }
   header p { margin: 0; color: #c3ccd4; max-width: 46em; }
-
-  /* ---------- texto ---------- */
 
   h2 {
     font-size: 21px;
@@ -98,8 +94,6 @@
   }
   pre code { background: none; padding: 0; font-size: 13.5px; line-height: 1.55; }
 
-  /* ---------- caixas ---------- */
-
   .nota, .aviso {
     border: 1px solid var(--linha);
     border-left: 3px solid var(--destaque);
@@ -111,8 +105,6 @@
   .aviso { border-left-color: var(--alerta); }
   .nota strong, .aviso strong { display: block; margin-bottom: 3px; }
   .nota p, .aviso p { margin: 4px 0; font-size: 14.5px; color: var(--tinta-2); }
-
-  /* ---------- saída ao vivo ---------- */
 
   .saida {
     border: 1px solid var(--linha);
@@ -140,8 +132,6 @@
     overflow: auto;
   }
 
-  /* ---------- tabela ---------- */
-
   .rolar { overflow-x: auto; margin: 14px 0; }
   table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 420px; }
   th, td { text-align: left; padding: 7px 12px; border-bottom: 1px solid var(--linha); vertical-align: top; }
@@ -158,8 +148,6 @@
     font-size: 13.5px;
     color: var(--tinta-3);
   }
-
-  /* ---------- impressão / PDF ---------- */
 
   @media print {
     @page { margin: 14mm; }
@@ -594,8 +582,6 @@ api.pesquisadores.listar({
 <script src="js/dados.js"></script>
 <script src="js/gepiseg-api.js"></script>
 <script>
-  // Os blocos de "resultado" desta página rodam de verdade, usando os mesmos
-  // arquivos que vocês vão usar. O que está impresso aqui é o que sai aí.
   const api = GepisegAPI.criar({ atrasoMs: 0 });
   const põe = (id, texto) => { document.getElementById(id).textContent = texto; };
 
@@ -643,7 +629,6 @@ api.pesquisadores.listar({
       'anos: ' + f.anos.join(', ') + '\n' +
       'titulacoes: ' + f.titulacoes.join(', '));
 
-    // As fotos: montadas como <img>, com as iniciais de plano B no onerror.
     const lista = await api.pesquisadores.listar({ porPagina: 4 });
     const caixa = document.getElementById('s-fotos');
     caixa.textContent = '';

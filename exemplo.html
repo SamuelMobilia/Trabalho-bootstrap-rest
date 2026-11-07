@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GEPISEG — exemplo</title>
   <style>
-    /* O CSS aqui é simples de propósito. A aparência é com vocês. */
     body {
       font-family: system-ui, sans-serif;
       background: #f5f6f8;
@@ -95,17 +94,12 @@
 <script>
   const api = GepisegAPI.criar();
 
-  // Guarda em que página estamos.
   let pagina = 1;
 
-  // ---------------------------------------------------------------
-  // 1. Mostrar a lista de artigos
-  // ---------------------------------------------------------------
   async function mostrarLista() {
     const lista = document.getElementById('lista');
     lista.innerHTML = 'carregando…';
 
-    // Monta os filtros a partir do que está escrito na tela.
     const filtros = {
       q: document.getElementById('busca').value,
       ano: document.getElementById('ano').value,
@@ -118,7 +112,6 @@
       let html = '';
 
       for (const artigo of r.results) {
-        // Pega só os nomes dos autores e junta com vírgula.
         const nomes = artigo.autores.map(function (a) { return a.nome; }).join(', ');
 
         html += '<div class="card" onclick="mostrarDetalhe(' + artigo.id + ')">' +
@@ -136,32 +129,22 @@
         'página ' + pagina + ' de ' + r.info.pages;
 
     } catch (erro) {
-      // Quando nada é encontrado, a API dá erro em vez de lista vazia.
       lista.innerHTML = 'Nenhum artigo encontrado.';
       document.getElementById('pagina').textContent = '';
     }
   }
 
-  // ---------------------------------------------------------------
-  // 2. Mostrar o detalhe de um artigo
-  // ---------------------------------------------------------------
   async function mostrarDetalhe(id) {
     const caixa = document.getElementById('detalhe');
     caixa.style.display = 'block';
     caixa.innerHTML = 'carregando…';
 
-    // porId devolve o artigo direto, sem .results
     const artigo = await api.artigos.porId(id);
 
-    // Os autores vêm só com nome e link. Seguimos o link para ter a pessoa
-    // inteira: bio, titulação, métricas.
     const pessoas = await api.seguir(artigo.pesquisadores);
 
     let autores = '';
     for (const p of pessoas) {
-      // A foto vem de um serviço externo e carrega de verdade. Ainda assim o
-      // onerror está aqui: se a internet cair ou o serviço sair do ar, a tela
-      // mostra as iniciais em vez de um ícone quebrado. Sempre tenha plano B.
       const foto = '<img src="' + p.imagem + '" alt="' + p.nome + '" class="avatar"' +
         ' onerror="this.outerHTML = \'<span class=&quot;avatar&quot; style=&quot;background:' +
         p.cor + '&quot;>' + p.iniciais + '</span>\'">';
@@ -181,9 +164,6 @@
     window.scrollTo(0, 0);
   }
 
-  // ---------------------------------------------------------------
-  // 3. Preencher o select de anos e os totais
-  // ---------------------------------------------------------------
   async function prepararTela() {
     const f = await api.filtros();
     const select = document.getElementById('ano');
@@ -199,11 +179,8 @@
       pessoas.info.count + ' pesquisadores · ' + artigos.info.count + ' artigos';
   }
 
-  // ---------------------------------------------------------------
-  // 4. Ligar os botões
-  // ---------------------------------------------------------------
   document.getElementById('buscar').onclick = function () {
-    pagina = 1;          // mudou a busca, volta para a primeira página
+    pagina = 1;
     mostrarLista();
   };
 
