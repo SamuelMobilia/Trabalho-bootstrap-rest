@@ -44,6 +44,16 @@
 </div>
 </main>
 
+<div class="offcanvas offcanvas-top offcanvas-full" tabindex="-1" id="offcanvasArtigo" aria-labelledby="offcanvasArtigoLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasArtigoLabel">Detalhes do artigo</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body" id="conteudoOffcanvas">
+    
+  </div>
+</div>
+
 <footer class="rodape text-center">
   <div class="container">GEPISEG &copy; 2026 - Grupo de Pesquisa Interdisciplinar em Segurança Web</div>
 </footer>
@@ -72,7 +82,7 @@
         const nomes = artigo.autores.map(function (a) { return a.nome; }).join(', ');
         html += `
         <div class="col">
-        <div class="card" style="width: 18rem;">
+        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasArtigo" aria-controls="offcanvasArtigo" onclick="mostrarDetalhe(${artigo.id})" class="card" style="width: 18rem;">
         <img src="${artigo.imagem}" class="card-img-top" alt="${artigo.nome}">
           <div class="card-body">
             <h5 class="card-title"><strong>${artigo.titulo}</strong></h5>
@@ -91,6 +101,36 @@
     }
 
   }
+
+  async function mostrarDetalhe(id) {
+      const caixa = document.getElementById('conteudoOffcanvas')
+
+      try {
+        const artigo = await api.artigos.porId(id);
+        const pessoas = await api.seguir(artigo.pesquisadores);
+        
+        const autoresHtml = pessoas.map(p => {return '<p><img src="' + p.imagem + '" alt="' + p.nome + '" class="avatar"' +
+        ' onerror="this.outerHTML = \'<span class=&quot;avatar&quot; style=&quot;background:' +
+        p.cor + '&quot;>' + p.iniciais + '</span>\'"> <strong>' + p.nome + '</strong> — ' + p.titulacao + ' — ' + p.metricas.totalArtigos + ' artigos' + '</p>';}).join('');
+
+        caixa.innerHTML = `
+        <h2>${artigo.titulo}</h2>
+        <p><strong>Veículo:</strong> ${artigo.veiculo}</p>
+        <p><strong>Data de lançamento:</strong> ${artigo.dataLancamento}</p>
+        <p><strong>Autores:</strong></p>
+        ${autoresHtml}
+        <hr>
+        <pre>${artigo.conteudo}</pre>
+        `;
+
+        const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(document.getElementById('offcanvasArtigo'));
+
+        offcanvas.show();
+      } catch (erro) {
+        caixa.innerHTML = 'Não foi possível carregar o artigo.'
+      }
+
+    }
 
   mostrarTodosArtigos();
 </script>
